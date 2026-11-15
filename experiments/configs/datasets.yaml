@@ -1,0 +1,102 @@
+datasets:
+  proprio:
+    family: ojs
+    source_type: captured_application
+    raw_source: ../SQLI/datasets/deduplicados_codificados/DATASET_METODO_BALANCEADO_sqli.tsv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/DATASET_METODO_BALANCEADO_decodificado_sqli.tsv
+    raw_file: proprio.tsv
+    decoded_file: proprio.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    year: null
+    notes: Aplicação OJS própria.
+  csic:
+    family: csic
+    source_type: synthetic_ecommerce
+    raw_source: ../SQLI/datasets/deduplicados_codificados/csic_balanceado_sqli.csv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/csic_balanceado_decodificado_sqli.csv
+    raw_file: csic.csv
+    decoded_file: csic.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2010
+    notes: HTTP CSIC 2010.
+  ecml:
+    family: ecml
+    source_type: benchmark
+    raw_source: ../SQLI/datasets/deduplicados_codificados/ecml_balanceado_sqli.csv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/ecml_balanceado_decodificado_sqli.csv
+    raw_file: ecml.csv
+    decoded_file: ecml.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2007
+    notes: ECML/PKDD 2007.
+  srbh:
+    family: srbh
+    source_type: honeypot
+    raw_source: ../SQLI/datasets/deduplicados_codificados/srbh_completo_sqli.csv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/srbh_completo_decodificado_sqli.csv
+    raw_file: srbh.csv
+    decoded_file: srbh.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2020
+    notes: SR-BH, curado para SQLi.
+  artificial:
+    family: artificial
+    source_type: synthetic
+    raw_source: ../SQLI/datasets/deduplicados_codificados/dataset_artificial_ia_sqli.tsv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/dataset_artificial_ia_decodificado_sqli.tsv
+    raw_file: artificial.tsv
+    decoded_file: artificial.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Variante artificial original; não usar junto com artificial_sqli como fontes independentes.
+  artificial_sqli:
+    family: artificial
+    source_type: synthetic
+    raw_source: ../SQLI/datasets/deduplicados_codificados/dataset_artificial_ia_sqli_melhorado_sqli.tsv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/dataset_artificial_ia_sqli_melhorado_decodificado_sqli.tsv
+    raw_file: artificial_sqli.tsv
+    decoded_file: artificial_sqli.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Ataques SQLi regenerados; mesma família do artificial.
+  site_cooking:
+    family: site_lab
+    source_type: controlled_lab
+    raw_source: ../SQLI/datasets/deduplicados_codificados/site_cooking.csv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/site_cooking_decodificado.csv
+    raw_file: site_cooking.csv
+    decoded_file: site_cooking.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Mesmo laboratório/gerador de site_sqli.
+  site_sqli:
+    family: site_lab
+    source_type: controlled_lab
+    raw_source: ../SQLI/datasets/deduplicados_codificados/site_sqli.csv
+    decoded_source: ../SQLI/datasets/deduplicados_decodificados/site_sqli_decodificado.csv
+    raw_file: site_sqli.csv
+    decoded_file: site_sqli.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Mesmo laboratório/gerador de site_cooking.
+

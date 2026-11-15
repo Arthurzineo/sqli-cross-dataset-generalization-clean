@@ -1,0 +1,6 @@
+<h1>Numeric Types</h1>
+<p>PostgreSQL offers integer types, floating-point types, and exact <code>numeric</code>/<code>decimal</code> values for quantities such as money.</p>
+<pre><code>CREATE TABLE prices (
+  product_id bigint PRIMARY KEY,
+  amount numeric(12, 2) NOT NULL
+);</code></pre>

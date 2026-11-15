@@ -1,0 +1,12 @@
+{
+  "seed": 20260923,
+  "threads": 2,
+  "bootstrap_iterations": 2000,
+  "top_k": 10,
+  "score_case_limit": 24,
+  "error_examples_per_kind": 3,
+  "neutral_tolerance": 1e-9,
+  "expected_seeds": [42, 123, 2026, 1337, 9001],
+  "allow_training": false,
+  "read_checkpoints": false
+}

@@ -1,0 +1,25 @@
+default_representation: decoded
+representations: [raw, decoded]
+feature_sets: [lex64, sql21, no_encoding, no_sql_keywords, no_length, no_special_chars, char_rates]
+models: [logistic, catboost, mlp]
+metrics: [precision, recall, f1, macro_f1, balanced_accuracy, specificity, mcc, pr_auc, roc_auc, fpr, fnr]
+threshold_strategy: validation_f1
+fixed_threshold: 0.5
+family_aware: true
+near_dedup: false
+development_cap_per_dataset_class: 0
+pilot_cap_per_dataset_class: 250
+threads: 2
+ram_budget_gib: 13
+shapley_permutations: 64
+bootstrap_iterations: 2000
+embedding_batch_size: 8
+dataset_policy:
+  exclude_as_independent_pair:
+    - [artificial, artificial_sqli]
+    - [site_cooking, site_sqli]
+  primary_datasets: [proprio, csic, ecml, srbh, artificial_sqli, site_cooking, site_sqli]
+  scenarios:
+    A_base: [proprio, csic, ecml, srbh, artificial_sqli]
+    B_base_plus_cooking: [proprio, csic, ecml, srbh, artificial_sqli, site_cooking]
+    C_complete: [proprio, csic, ecml, srbh, artificial_sqli, site_cooking, site_sqli]

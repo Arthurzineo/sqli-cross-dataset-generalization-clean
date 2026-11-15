@@ -1,0 +1,4 @@
+<h1>Network Address Types</h1>
+<p><code>inet</code>, <code>cidr</code>, and <code>macaddr</code> represent network addresses and support network-aware operators.</p>
+<pre><code>CREATE TABLE access_log (client_ip inet NOT NULL);
+SELECT * FROM access_log WHERE client_ip &lt;&lt; '192.168.0.0/16';</code></pre>

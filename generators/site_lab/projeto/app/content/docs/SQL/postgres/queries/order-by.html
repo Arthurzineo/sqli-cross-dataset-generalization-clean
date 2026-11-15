@@ -1,0 +1,8 @@
+<h1>ORDER BY</h1>
+<p><code>ORDER BY</code> determines result order. Specify direction and NULL handling when a stable presentation matters.</p>
+<pre><code>SELECT order_id, total, shipped_at
+FROM orders
+WHERE status = 'shipped'
+ORDER BY shipped_at DESC NULLS LAST, order_id ASC
+LIMIT 50;</code></pre>
+<p>Sort by selected expressions, output aliases, or ordinal positions. An index that matches filtering and ordering can reduce sorting work.</p>

@@ -1,0 +1,5 @@
+<h1>pg_sleep</h1>
+<p><code>pg_sleep(seconds)</code> pauses the current PostgreSQL session for the requested interval. It is useful only for controlled maintenance or test scenarios and should be used cautiously because it occupies a connection.</p>
+<pre><code>SELECT pg_sleep(0.5);
+SELECT now() AS before_sleep, pg_sleep_for(interval '1 second'), now() AS after_sleep;</code></pre>
+<p>This page documents a normal PostgreSQL function; applications should not expose arbitrary execution of SQL functions to untrusted input.</p>

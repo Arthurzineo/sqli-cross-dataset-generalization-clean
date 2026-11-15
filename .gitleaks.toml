@@ -1,0 +1,17 @@
+[extend]
+useDefault = true
+
+# As quatro cópias abaixo preservam dois JWTs gerados pelo laboratório local
+# de site_sqli. Os tokens são dados sintéticos expirados, não credenciais de
+# uma aplicação externa. A exceção exige simultaneamente o caminho restrito e
+# o formato JWT HS256; não libera JWTs em nenhum outro arquivo.
+[[allowlists]]
+description = "JWTs sintéticos e expirados do laboratório site_sqli"
+condition = "AND"
+paths = [
+  '''^datasets/processed/(historical|controlled)/(raw|canonicalized)/site_sqli\.csv$''',
+]
+regexTarget = "match"
+regexes = [
+  '''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+''',
+]

@@ -1,0 +1,7 @@
+<h1>CREATE VIEW</h1>
+<p><code>CREATE VIEW</code> stores a named query. A view presents selected columns and rows without storing a separate copy of the result.</p>
+<pre><code>CREATE VIEW active_customers AS
+SELECT customer_id, name, email
+FROM customers
+WHERE active = true;</code></pre>
+<p>Queries against the view are planned using its defining <code>SELECT</code>. Permissions can be granted on the view independently from its base tables.</p>

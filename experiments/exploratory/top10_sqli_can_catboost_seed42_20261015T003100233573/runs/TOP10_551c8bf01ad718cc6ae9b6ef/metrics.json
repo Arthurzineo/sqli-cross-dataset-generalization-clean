@@ -1,0 +1,236 @@
+{
+  "threshold_source": 0.8883784967498348,
+  "metrics_validation": {
+    "threshold": 0.8883784967498348,
+    "precision": 0.996268656716418,
+    "recall": 0.907391673746814,
+    "f1": 0.9497554468652735,
+    "macro_f1": 0.951900903587171,
+    "balanced_accuracy": 0.9519966015293118,
+    "specificity": 0.9966015293118097,
+    "mcc": 0.9076119862280803,
+    "pr_auc": 0.9513037249233375,
+    "roc_auc": 0.9520002107802551,
+    "brier": 0.045458044202044516,
+    "ece_10": 0.020081122314098993,
+    "fpr": 0.0033984706881903144,
+    "fnr": 0.09260832625318606,
+    "tn": 1173,
+    "fp": 4,
+    "fn": 109,
+    "tp": 1068,
+    "n": 2354,
+    "n_attack": 1177
+  },
+  "metrics_common": {
+    "threshold": 0.8883784967498348,
+    "precision": 1.0,
+    "recall": 0.9704142011834319,
+    "f1": 0.984984984984985,
+    "macro_f1": 0.9852461156808983,
+    "balanced_accuracy": 0.985207100591716,
+    "specificity": 1.0,
+    "mcc": 0.9709212538355618,
+    "pr_auc": 0.9851634637203052,
+    "roc_auc": 0.985207100591716,
+    "brier": 0.016798993241635873,
+    "ece_10": 0.03812183424297574,
+    "fpr": 0.0,
+    "fnr": 0.029585798816568046,
+    "tn": 510,
+    "fp": 0,
+    "fn": 15,
+    "tp": 492,
+    "n": 1017,
+    "n_attack": 507
+  },
+  "metrics_test": {
+    "threshold": 0.8883784967498348,
+    "precision": 1.0,
+    "recall": 0.9564,
+    "f1": 0.9777141688816193,
+    "macro_f1": 0.9781896348420623,
+    "balanced_accuracy": 0.9782,
+    "specificity": 1.0,
+    "mcc": 0.9573103371636991,
+    "pr_auc": 0.9782000000000001,
+    "roc_auc": 0.9782,
+    "brier": 0.022654753575345292,
+    "ece_10": 0.032089923260912714,
+    "fpr": 0.0,
+    "fnr": 0.0436,
+    "tn": 2500,
+    "fp": 0,
+    "fn": 109,
+    "tp": 2391,
+    "n": 5000,
+    "n_attack": 2500
+  },
+  "oracle_diagnostic": {
+    "threshold": 0.8883784967498348,
+    "metrics": {
+      "threshold": 0.8883784967498348,
+      "precision": 1.0,
+      "recall": 0.9564,
+      "f1": 0.9777141688816193,
+      "macro_f1": 0.9781896348420623,
+      "balanced_accuracy": 0.9782,
+      "specificity": 1.0,
+      "mcc": 0.9573103371636991,
+      "pr_auc": 0.9782000000000001,
+      "roc_auc": 0.9782,
+      "brier": 0.022654753575345292,
+      "ece_10": 0.032089923260912714,
+      "fpr": 0.0,
+      "fnr": 0.0436,
+      "tn": 2500,
+      "fp": 0,
+      "fn": 109,
+      "tp": 2391,
+      "n": 5000,
+      "n_attack": 2500
+    }
+  },
+  "kind": "lodo",
+  "target": "artificial_sqli",
+  "seed": 42,
+  "model": "catboost",
+  "representation": "CANONICALIZED",
+  "split_id": "d7145fccefcf9d412da4d16deaa7458fb056b5cd4edcc120e895a36cba4d59c2",
+  "split_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/splits/d7145fccefcf9d412da4d16deaa7458fb056b5cd4edcc120e895a36cba4d59c2.parquet",
+  "split_sha256": "7df81dbb354348b23568ffed0d7743b71227869686cbf64757ffb3f20b3a10f7",
+  "cache": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_sqli_can_catboost_seed42_20261015T003100233573/cache",
+  "config": {
+    "protocol": "paired_raw_origin_v1",
+    "output": "experimentos_exploratorios/top10_sqli_can_catboost_seed42_20261015T003100233573",
+    "datasets": [
+      "proprio",
+      "csic",
+      "ecml",
+      "srbh",
+      "artificial_sqli",
+      "site_cooking",
+      "site_sqli"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026,
+      1337,
+      9001
+    ],
+    "models": [
+      "logistic",
+      "catboost",
+      "mlp"
+    ],
+    "representations": [
+      "RAW",
+      "CANONICALIZED"
+    ],
+    "threads": 2,
+    "max_address_space_gib": 12,
+    "min_available_ram_gib": 2,
+    "test_fraction": 0.2,
+    "validation_fraction": 0.2,
+    "separability_cap_per_dataset_class": 2500,
+    "separability_conditions": [
+      "all",
+      "benign",
+      "malicious"
+    ],
+    "save_checkpoints": true,
+    "model_config": {
+      "logistic": {
+        "C": 1.0,
+        "max_iter": 500
+      },
+      "catboost": {
+        "iterations": 200,
+        "depth": 5,
+        "learning_rate": 0.05,
+        "patience": 15
+      },
+      "mlp": {
+        "hidden": [
+          64,
+          32
+        ],
+        "epochs": 40,
+        "batch_size": 128,
+        "patience": 6
+      }
+    },
+    "pilot_cap": 0
+  },
+  "config_hash": "ca77ea09c0cb4132fc99e24fa98698c605df5d3af67816debbe0453ab2312dd6",
+  "code_sha256": {
+    "<PROJECT_ROOT>/artigo/config/datasets.yaml": "3ef22e973746bee1c8cd1a30d50b72f1622fc4604bb4debb0b72b4adcd9e0f2c",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/common.py": "f8b79831def82eba0796cadce8159c5412703a956afbf83ec45e4945e7cf7c58",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/consolidate.py": "fc6fd39e6d4deef1903d05ec039b353af7622bcdd2e82ac3008693a6a64d085f",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/existing_analysis.py": "3d60bb9456f12a3aa3072757193c10b8d59af5f5e431968cafaa6fcb70942af6",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/run.py": "8c175ae79cbef978802f678ca466d8eec0fb7254f3315e2b2b24da2dbdb67397",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/test_supplemental.py": "3092c5509f92256c62b25e1da7e39332930ec1cb37568be772bb53709eedf213",
+    "<PROJECT_ROOT>/artigo/src/data/loader.py": "2c8ef0ca67be30a44d9af1a20157d55de5a82376273b3605cb2c87eca518ae4d",
+    "<PROJECT_ROOT>/artigo/src/data/splits.py": "8d46777e6e0128ed632638af0a8e9bf1d03fc5acf991a9e0339fb5d48a77e030",
+    "<PROJECT_ROOT>/artigo/src/evaluation/metrics.py": "5d0ac4534cc483316a282cfb7717b81b75882b9f6dc4cb2cf1c4257a8a3da47a",
+    "<PROJECT_ROOT>/artigo/src/features/lexical.py": "4d3fa10385ef122b21a99514e028537a7d44c80e8b23e62f35e4ef85d4ca9957",
+    "<PROJECT_ROOT>/artigo/src/models/classical.py": "1c259353aa4457608487bb3b8a6cc97932803ef451c37889070265cc84c5f7c8",
+    "<PROJECT_ROOT>/artigo/src/utils/config.py": "0034e7d07a6c8739811ee391019d7821f5276d6f2d6cb1ca6c12679caca651c2",
+    "<PROJECT_ROOT>/artigo/src/utils/provenance.py": "661d89292bdb9df11ca3ad1ec827b50e7c916d60512cddb2e1ff927f3f76edba"
+  },
+  "removed_source": null,
+  "training_sources": [
+    "ecml",
+    "proprio",
+    "site_cooking",
+    "site_sqli",
+    "srbh"
+  ],
+  "validation_sources": [
+    "csic"
+  ],
+  "experiment_id": "TOP10_551c8bf01ad718cc6ae9b6ef",
+  "run_dir": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_sqli_can_catboost_seed42_20261015T003100233573/runs/TOP10_551c8bf01ad718cc6ae9b6ef",
+  "selected_features": [
+    "sql_select",
+    "sql_delete",
+    "sql_drop",
+    "sql_from",
+    "sql_or",
+    "sql_and",
+    "sql_order",
+    "sql_table",
+    "sql_comment_dash",
+    "sql_comment_block"
+  ],
+  "baseline_metrics_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_ab1ae563ae92575bf7c24f21f62c/metrics.json",
+  "exploratory_note": "Exploratory retrospective ablation: fixed Top-10 from historical global LODO rankings. Feature selection is not nested per held-out target; other historical folds include that target as a source. One seed only. Baseline64 reuses saved controlled results for the same seed and exact splits. Thresholds are reselected independently on source validation after each fit.",
+  "status": "COMPLETED",
+  "finished_at": "2026-10-15T03:31:03.309111+00:00",
+  "runtime_seconds": 2.294023933005519,
+  "training_seconds": 2.0138973590219393,
+  "inference_seconds": 0.0035792230046354234,
+  "inference_scope": "validation+test",
+  "selected_iterations": 190,
+  "rss_peak_mib": 533.75,
+  "hardware": {
+    "available_ram_bytes": 6978215936,
+    "cpu_count": 24,
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "software": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "catboost": "1.2.10"
+  },
+  "git_commit": null,
+  "prediction_file": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_sqli_can_catboost_seed42_20261015T003100233573/runs/TOP10_551c8bf01ad718cc6ae9b6ef/predictions.parquet",
+  "train_n": 161091,
+  "validation_n": 2354,
+  "test_n": 5000,
+  "feature_importance_file": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_sqli_can_catboost_seed42_20261015T003100233573/runs/TOP10_551c8bf01ad718cc6ae9b6ef/feature_importance.parquet"
+}

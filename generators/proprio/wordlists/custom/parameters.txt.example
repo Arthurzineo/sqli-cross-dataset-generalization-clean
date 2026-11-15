@@ -1,0 +1,11 @@
+# Exemplo de nomes de parâmetros para fuzzing. Copie para parameters.txt.
+id
+user
+username
+password
+q
+search
+page
+token
+redirect
+file

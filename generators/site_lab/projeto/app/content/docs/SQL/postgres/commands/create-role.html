@@ -1,0 +1,5 @@
+<h1>CREATE ROLE</h1>
+<p><code>CREATE ROLE</code> defines a database role. A role with <code>LOGIN</code> can authenticate; group roles are commonly used to collect privileges.</p>
+<pre><code>CREATE ROLE reporting_reader NOLOGIN;
+CREATE ROLE analyst LOGIN PASSWORD 'managed-outside-sql';
+GRANT reporting_reader TO analyst;</code></pre>

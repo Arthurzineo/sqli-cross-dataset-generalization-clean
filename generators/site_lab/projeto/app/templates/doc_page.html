@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{{ doc['title'] }} | SQL Reference Forum{% endblock %}
+
+{% block content %}
+  <article class="doc-page" data-doc-slug="{{ doc['slug'] }}">
+    <a class="back-link" href="{{ url_for('pages.docs_list') }}">All documentation</a>
+    <h1>{{ doc['title'] }}</h1>
+    <div class="doc-content">{{ doc['content'] }}</div>
+  </article>
+{% endblock %}

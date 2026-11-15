@@ -1,0 +1,4 @@
+<h1>Arrays</h1>
+<p>PostgreSQL arrays store ordered collections of one base type. Array operators can test containment and overlap.</p>
+<pre><code>CREATE TABLE articles (tags text[]);
+SELECT * FROM articles WHERE tags @&gt; ARRAY['sql', 'postgres'];</code></pre>

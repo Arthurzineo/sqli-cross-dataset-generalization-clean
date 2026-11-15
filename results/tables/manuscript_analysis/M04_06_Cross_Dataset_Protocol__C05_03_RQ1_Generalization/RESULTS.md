@@ -1,0 +1,88 @@
+# Results — 5.3 / RQ1
+
+Resultado principal: LODO C por target/modelo em `LODO/tables/lodo_by_target.csv`; ID separado em `ID/tables/id_results.csv`.
+
+Gap e razão de generalização estão em `LODO/tables/generalization_gap.csv` e `generalization_ratio.csv`. Targets ruins permanecem nas tabelas; médias macro não os substituem.
+
+Comparações A/B/C usam somente targets comuns (`LODO/tables/scenario_common_targets.csv`). Pares da mesma família são identificados e excluídos das médias de transferência independente.
+
+Embeddings e early fusion estão em `LODO/tables/embedding_and_fusion_results.csv`. Não existem scores internos suficientes para afirmar associação validação→OOD.
+
+CANONICALIZED: menor F1 médio por condição = 0.681626 (srbh/logistic); maior = 0.977740 (proprio/catboost). Fonte: `LODO/tables/lodo_by_target.csv`, row_id d2e53f0571c59f89f1ae e 6c75323536f9aeac2026. Maior gap ID−OOD = 0.301450 (srbh/logistic); `LODO/tables/generalization_gap.csv`, row_id 508fbf5749b4ae69dbe8.
+
+RAW: menor F1 médio por condição = 0.577788 (srbh/logistic); maior = 0.926085 (proprio/mlp). Fonte: `LODO/tables/lodo_by_target.csv`, row_id fb8f2bded56927baf083 e e59d22380d8329934616. Maior gap ID−OOD = 0.360289 (srbh/logistic); `LODO/tables/generalization_gap.csv`, row_id f56061c7fe01b36a916c.
+
+CANONICALIZED: catboost teve maior média não ponderada de F1 entre targets (0.882548); trata-se de ranking descritivo, não superioridade universal. `LODO/tables/lodo_macro_summary.csv`, row_id 05ab85daff406336b5be.
+
+RAW: mlp teve maior média não ponderada de F1 entre targets (0.798002); trata-se de ranking descritivo, não superioridade universal. `LODO/tables/lodo_macro_summary.csv`, row_id 160991492c0a740d3ff8.
+
+A associação pairwise médio→LODO não foi detectada após Holm em 6 de 6 estratos modelo/representação; ver M04.11/statistics/pairwise_vs_lodo.csv, filtro p_holm≥0.05. Isso não prova ausência de associação; há poucos targets.
+
+## Interpretation and limitations
+
+Principal metrics_source, threshold escolhido na validação de origem. PR-AUC=average_precision_score (não trapezoidal). Seeds resumidas dentro de cada condição. Gap=M_ID−M_OOD; razão F1_OOD/F1_ID, indefinida se denominador zero. Cenários não são combinados. SOURCE_AWARE_VALIDATION documenta somente os domínios e early stopping realmente existentes.
+
+As observações se limitam às fontes avaliadas. Não demonstram causalidade nem transferência universal. Casos selecionados apoiam interpretação e não estimam prevalência de erros.
+
+## Positive, Negative and Null Results
+
+Todas as condições das tabelas são preservadas, incluindo baixo desempenho e efeitos negativos/zero. Não significância e indisponibilidade são distintas; resultados inexistentes estão marcados, não substituídos por zeros. Consulte as tabelas completas e a síntese estatística antes de afirmar superioridade.
+
+## Metric Provenance
+
+| Metric/Result | Analytical file | Original source | Filter | Aggregation | Script |
+|---|---|---|---|---|---|
+| ID/tables/id_results.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/ID/tables/id_results.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | mean/std(ddof=1)/median/min/max across seeds within target, model, representation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/pairwise_results.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/pairwise_results.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(source, target_dataset, model, representation, feature_set, related_source); precision, recall, f1, mcc, pr_auc, roc_auc, balanced_accuracy, specificity, fpr, fnr, brier, ece_10 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/source_average.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/source_average.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | seeds first; unweighted mean over independent partner datasets | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/target_average.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/target_average.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | seeds first; unweighted mean over independent partner datasets | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/transfer_asymmetry.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/transfer_asymmetry.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_f1.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_f1.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_mcc.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_mcc.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_pr_auc.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_pr_auc.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_recall.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_recall.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_fpr.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_fpr.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| PAIRWISE/tables/matrix_fnr.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/PAIRWISE/tables/matrix_fnr.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/lodo_by_target.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/lodo_by_target.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(experiment_type, target_dataset, model, representation, feature_set); precision, recall, f1, mcc, pr_auc, roc_auc, balanced_accuracy, specificity, fpr, fnr, brier, ece_10 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/lodo_macro_summary.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/lodo_macro_summary.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | seeds first; unweighted targets; *_mean_min is worst target for higher-is-better metrics | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/derived/gap_pairs.parquet | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/derived/gap_pairs.parquet` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/generalization_gap.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/generalization_gap.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(experiment_type, target_dataset, model, representation, feature_set); gap_f1, gap_mcc, gap_pr_auc, gap_recall, gap_precision, gap_roc_auc, gap_balanced_accuracy, ood_f1, id_f1 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/generalization_ratio.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/generalization_ratio.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(experiment_type, target_dataset, model, representation, feature_set); ratio_f1 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/derived/scenario_pairs.parquet | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/derived/scenario_pairs.parquet` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/scenario_common_targets.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/scenario_common_targets.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(scenario_a, scenario_b, target_dataset, model, representation, feature_set); delta_f1 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| SOURCE_AWARE_VALIDATION/tables/inner_fold_results.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/SOURCE_AWARE_VALIDATION/tables/inner_fold_results.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| SOURCE_AWARE_VALIDATION/tables/selected_configurations.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/SOURCE_AWARE_VALIDATION/tables/selected_configurations.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| SOURCE_AWARE_VALIDATION/tables/validation_vs_ood.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/SOURCE_AWARE_VALIDATION/tables/validation_vs_ood.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/embedding_and_fusion_results.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/embedding_and_fusion_results.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(target_dataset, model, representation, feature_set); precision, recall, f1, mcc, pr_auc, roc_auc, balanced_accuracy, specificity, fpr, fnr, brier, ece_10 summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/derived/dense_vs_lexical.parquet | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/derived/dense_vs_lexical.parquet` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/dense_vs_lexical_by_target.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/dense_vs_lexical_by_target.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | groupby(target_dataset, model, representation, split_counts_equal); delta_f1, delta_pr_auc summarized with mean/std(ddof=1)/median/min/max; n_seeds identifies seed repetition; input row experiment_ids unioned | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/pairwise_vs_lodo.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/pairwise_vs_lodo.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/figure_lodo_RAW.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/figure_lodo_RAW.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/figure_gap_RAW.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/figure_gap_RAW.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/figure_lodo_CANONICALIZED.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/figure_lodo_CANONICALIZED.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+| LODO/tables/figure_gap_CANONICALIZED.csv | `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/LODO/tables/figure_gap_CANONICALIZED.csv` | SOURCE_FILES.parquet / AUXILIARY_SOURCES.csv | row_id + experiment_ids + dimensions | none; one row per observation | `artigo/scripts/analysis/final_analysis.py` |
+
+## Data Sources and Traceability
+
+Original source-file mapping: `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/SOURCE_FILES.parquet`. This mapping contains 2220 experiment IDs and paths to metrics, manifests, predictions, scores, thresholds and feature files. Mapped artifacts are not necessarily opened.
+
+Auxiliary inputs (including dataset provenance and original metadata): `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/AUXILIARY_SOURCES.csv`.
+
+Original globs: `artigo/results/raw/EXP_*.json`, `artigo/runs/status/EXP_*.json`, `artigo/runs/manifests/EXP_*.json`; selected-only `artigo/runs/feature_importance/EXP_*.csv`, `artigo/runs/predictions/EXP_*.csv`. Dataset globs: `artigo/datasets/metadata/*.csv`, `artigo/datasets/original_copies/{raw,decoded}/*`, `artigo/datasets/processed/embeddings/*/*.json`. No checkpoints read.
+
+Number of mapped files actually read in the analysis session: 6843. Complete read ledger with byte sizes and mtime: `_global/FILES_READ.parquet`. For global exact unique-file counts, see `_global/file_read_summary.csv`. Files may support multiple sections; do not add section counts.
+
+Master: `artigo/analise_resultados_tcc/_global/master_results.parquet`. Lineage: `artigo/analise_resultados_tcc/_global/SOURCE_LINEAGE.parquet`. Registry: `artigo/analise_resultados_tcc/_global/run_registry.parquet`.
+
+Columns: every artifact's `source_columns` is recorded in `TRACEABILITY.csv`. Metrics use `metrics_source`; `metrics_oracle_diagnostic` is exclusively diagnostic. Filters: usable=True (completed, pilot=0, valid metrics) unless coverage/exclusion audit; exact per-row IDs and dimension columns define all additional selections. No seed treated as an independent target. Grouping and seed aggregation: mean/std(ddof=1)/median/min/max within target + requested composition + model + representation + feature set; macro summaries then weight targets equally. Explicit derived comparisons are paired by seed first.
+
+Formulas: F1=2TP/(2TP+FP+FN); gap=ID−OOD; ratio=OOD/ID; contribution=full−removed for higher-is-better, reversed for error rates; threshold drift=abs(source−oracle); oracle gap=F1_oracle−F1_source; canonicalization delta=CANONICALIZED−RAW only for eligible pairs. PR-AUC is average precision. Non-applicable metrics are null, not zero.
+
+Script: `artigo/scripts/analysis/final_analysis.py`. Configuration: `artigo/scripts/analysis/config.json`.
+
+Command (from project root):
+```bash
+<PROJECT_ROOT>/../../venv/bin/python <PROJECT_ROOT>/artigo/scripts/analysis/final_analysis.py --config <PROJECT_ROOT>/artigo/scripts/analysis/config.json
+```
+
+Derived files, tables and figures: `artigo/analise_resultados_tcc/M04_06_Cross_Dataset_Protocol__C05_03_RQ1_Generalization/TRACEABILITY.csv` lists all 43 registered artifacts, their source tables, columns, filters, aggregation and generation command. Each table has `row_id`, `experiment_ids` and `source_file`; figure provenance points to its exact plotting table. Follow row_id → experiment_ids → SOURCE_FILES → original JSON/prediction/split. Use `scripts/analysis/trace_value.py --table <table> --row-id <row_id> --column <column>` to print the chain.

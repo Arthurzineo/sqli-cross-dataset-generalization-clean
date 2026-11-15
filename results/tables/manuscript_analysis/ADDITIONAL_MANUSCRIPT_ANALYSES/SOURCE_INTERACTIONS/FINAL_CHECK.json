@@ -1,0 +1,40 @@
+{
+  "no_training": true,
+  "no_predictions": true,
+  "existing_metrics_unchanged": true,
+  "matched_nested_coalitions": true,
+  "matched_seeds": true,
+  "missing_not_zero_filled": true,
+  "equal_target_macro_weight": true,
+  "conditional_interpretation": true,
+  "all_11_pdfs_exist": true,
+  "index_matches": true,
+  "all_figures_have_sources": true,
+  "original_pdfs_unchanged": true,
+  "contexts": 6480,
+  "seed_pairs": 32400,
+  "new_A_rows": 210,
+  "new_B_rows": 240,
+  "figures": {
+    "marginal_gain_by_source_and_pool_size": {
+      "pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_pool_size.pdf",
+      "png": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_pool_size.png",
+      "shared_symmetric_bound": 0.1683007296151595,
+      "zero_center": 0,
+      "values_equal_source": true,
+      "vector_pdf": true,
+      "png_dpi": 300,
+      "text_in_bounds": true
+    },
+    "marginal_gain_by_source_and_target": {
+      "pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_target.pdf",
+      "png": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_target.png",
+      "shared_symmetric_bound": 0.1683007296151595,
+      "zero_center": 0,
+      "values_equal_source": true,
+      "vector_pdf": true,
+      "png_dpi": 300,
+      "text_in_bounds": true
+    }
+  }
+}

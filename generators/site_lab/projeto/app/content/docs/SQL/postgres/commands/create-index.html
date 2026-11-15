@@ -1,0 +1,5 @@
+<h1>CREATE INDEX</h1>
+<p><code>CREATE INDEX</code> creates an access structure that can accelerate lookups, joins, and ordering. Indexes have write and storage costs, so create them for observed query patterns.</p>
+<pre><code>CREATE INDEX orders_customer_created_idx
+ON orders (customer_id, created_at DESC);</code></pre>
+<p>Use <code>CREATE UNIQUE INDEX</code> when uniqueness should be enforced, and <code>CREATE INDEX CONCURRENTLY</code> when a production build must avoid blocking writes.</p>

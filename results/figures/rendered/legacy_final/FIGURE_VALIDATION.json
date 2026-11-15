@@ -1,0 +1,365 @@
+{
+  "script": "artigo/scripts/render_final_manuscript_figures.py",
+  "script_sha256": "9b3e3eef740e9b3401016a60ba939c030ad6a3790c8b36467435cb56b4a4460e",
+  "sources": {
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/lodo_by_target.parquet": {
+      "sha256": "cce36a0673e88e7e06fa2545b2e227fa45ab1230c0f53619c05feb9225eef8af",
+      "rows": 42
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/lodo_by_target.csv": {
+      "sha256": "700594756aecaf04f5a375db67a37cb718cd0ddfde29850b33bee59fdcb3e644",
+      "rows": 42
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/id_ood_same_test.parquet": {
+      "sha256": "b1bfc08ba943c8b4230cf92a0f6710437849fa66fb0164466c96648b81ee46d0",
+      "rows": 42
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/id_ood_same_test.csv": {
+      "sha256": "1ef3161c688d808d6c1d2c29965ebc97ad38473b1a777c3e4903cb52cb20164e",
+      "rows": 42
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/source_contribution_by_target.parquet": {
+      "sha256": "6dddb8a33199cf41b50c16225251368cd8318a956a6dceca6db06cfdab54e9ba",
+      "rows": 240
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/source_contribution_by_target.csv": {
+      "sha256": "c5e3c3d5617774a3a88d267ae1a4daf1de2ab61191c487b0544f0dd7235d1050",
+      "rows": 240
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/derived/selected_score_histograms.parquet": {
+      "sha256": "617655ed821685314616e5ecb2937f38c27efb80ca7efa095ef05a05e3c1f5a2",
+      "rows": 960
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/derived/selected_score_histograms.csv": {
+      "sha256": "6e819b88907829609bafd395a55895aaa8b41e343c179e4dd948f020582a4b7a",
+      "rows": 960
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/canonicalization_by_target.parquet": {
+      "sha256": "9e1bd4a6e20a28877099b7c0071bc65a7161cc0ce5a6bf326ddb73ac6383b15b",
+      "rows": 21
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/canonicalization_by_target.csv": {
+      "sha256": "0650831814fb2e3b79b7d277f2f13fef63c1d2b09893fe3424bc48cc9f6b0f25",
+      "rows": 21
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/separability.parquet": {
+      "sha256": "50b92254db7648d7cee6c3786d5103d7adea190cf7b96479cfc20a6aa2d2a59f",
+      "rows": 6
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/separability.csv": {
+      "sha256": "1b75f6be07faeab8f45b6885f6bdf6efb5b03d69237279022b80c9e466415612",
+      "rows": 6
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/selected_runs/cases.parquet": {
+      "sha256": "ba53114bcf5866bfeae262c3eebde10550d6eb44bb3b50262d33b6c5aa580977",
+      "rows": 8
+    },
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/selected_runs/cases.csv": {
+      "sha256": "8a04431b24704543e2874b84d815b5f3c39523a6e9169fd8ffab7efea6539015",
+      "rows": 8
+    }
+  },
+  "checks": [
+    {
+      "figure": "lodo_by_target",
+      "element": "heatmap values",
+      "values": 42,
+      "exact_match": true
+    },
+    {
+      "figure": "canonicalization_effect",
+      "element": "heatmap values",
+      "values": 21,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "logistic/RAW",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "logistic/CANONICALIZED",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "catboost/RAW",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "catboost/CANONICALIZED",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "mlp/RAW",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "id_ood_common_test_gap",
+      "element": "mlp/CANONICALIZED",
+      "values": 7,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "source_contribution",
+      "element": "heatmap values",
+      "values": 49,
+      "exact_match": true
+    },
+    {
+      "figure": "controlled_separability",
+      "element": "RAW bar heights",
+      "values": 3,
+      "exact_match": true
+    },
+    {
+      "figure": "controlled_separability",
+      "element": "RAW SD endpoints",
+      "values": 6,
+      "exact_match": true
+    },
+    {
+      "figure": "controlled_separability",
+      "element": "CANONICALIZED bar heights",
+      "values": 3,
+      "exact_match": true
+    },
+    {
+      "figure": "controlled_separability",
+      "element": "CANONICALIZED SD endpoints",
+      "values": 6,
+      "exact_match": true
+    },
+    {
+      "figure": "controlled_separability",
+      "element": "chance reference",
+      "values": 2,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "test/0 y",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "test/0 x (existing bin centers)",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "test/1 y",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "test/1 x (existing bin centers)",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "validation/0 y",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "validation/0 x (existing bin centers)",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "validation/1 y",
+      "values": 20,
+      "exact_match": true
+    },
+    {
+      "figure": "selected_score_shift",
+      "element": "validation/1 x (existing bin centers)",
+      "values": 20,
+      "exact_match": true
+    }
+  ],
+  "outputs": {
+    "lodo_by_target": {
+      "inches": [
+        6.850393700787402,
+        3.7
+      ],
+      "png_pixels": [
+        2055,
+        1110
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nFMSTEX+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\nCPUQYB+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     22  0\n"
+    },
+    "canonicalization_effect": {
+      "inches": [
+        6.850393700787402,
+        3.6
+      ],
+      "png_pixels": [
+        2055,
+        1080
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGBPBVG+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\nCPUQYB+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     22  0\n"
+    },
+    "id_ood_common_test_gap": {
+      "inches": [
+        6.850393700787402,
+        3.5
+      ],
+      "png_pixels": [
+        2055,
+        1050
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEKJHRP+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\nCPUQYB+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     22  0\n"
+    },
+    "source_contribution": {
+      "inches": [
+        6.850393700787402,
+        6.15
+      ],
+      "png_pixels": [
+        2055,
+        1845
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBUPUAV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\nCPUQYB+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     22  0\n"
+    },
+    "controlled_separability": {
+      "inches": [
+        6.850393700787402,
+        3.1
+      ],
+      "png_pixels": [
+        2055,
+        930
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBSFXDM+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "selected_score_shift": {
+      "inches": [
+        6.850393700787402,
+        3.2
+      ],
+      "png_pixels": [
+        2055,
+        960
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_within_canvas": true,
+      "pdf_raster_images": 0,
+      "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEEDQJO+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     15  0\n"
+    }
+  },
+  "original_files_unchanged": true,
+  "csv_parquet_exact_match": true,
+  "source_value_count": 603,
+  "selected_experiment_id": "SUPP_70be6ed68f2790ad3c5251d9ccfa",
+  "original_file_sha256": {
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/lodo_by_target.pdf": "b4f2f3112bd91b6cf31ec2569d0c7b90ec62f5b9a3b0537418a8015bc7c76b3d",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/lodo_by_target.png": "381b9d2c812858f503ff493e1385ae7a467374417eec0507631d8eb5d9307b29",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/id_ood_common_test_gap.pdf": "01e8e254415c9297bb08183b4f7e8f5bee406123c2aee0d1be861df7b07d5aea",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/id_ood_common_test_gap.png": "e644fc241d42d0c967818f109578f829bfe4bddee0a3ad1392da0fc6583380b8",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/source_contribution.pdf": "0aa1636e50f99483f73443ea8d4a260ed67d65bbdef2ee76f2a6f129244a1aea",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/source_contribution.png": "6829f189bbc560e40d0d1fe688a32d646251f6a3f1f04da7c706c9a1846b1330",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/selected_score_shift.pdf": "f41117031164bb4a5821332e5c78c08888da1718b7e2a2fb65b86e2f7e16c6ef",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/selected_score_shift.png": "c96e01d7a8f8cafdd69ce476ae4fa139f60fd49ae976cccffae68e2343c35551",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/canonicalization_effect.pdf": "9f11a7c02472305d03f64e4441ec970f1687144d2f3db6b794695b4c71f6aa7d",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/canonicalization_effect.png": "0d32ca6e7b9da9bc4c8ddc578dbb99b4c34dd449588e4b0965ec5e3613a2ce8d",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/controlled_separability.pdf": "80be13bd95639209f05c08d7cb391d5fa2167b6bbc9322779b86a6293be07ad9",
+    "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/figures/controlled_separability.png": "99e15e918a46b61ff00f5f0ea84a97eeedf59191a61efa6962d767cdb5623d75",
+    "artigo/scripts/analyze_supplemental_results.py": "985623e6d2809c41f8cb8b2f9663d16aaeaf68193bdb9d42e7caf923c0fd6af5"
+  },
+  "scientific_recomputations": 0,
+  "numeric_storage": "PLOTTED_VALUES.csv: exact float64 hex plus 17-significant-digit decimal",
+  "output_sha256": {
+    "lodo_by_target.pdf": "5d047b90447e777b34ef7b81545a4308397f4195f174f1368a5dd78ac4bc74ef",
+    "lodo_by_target.png": "356f98f0d8b0044172d7df48e742cc717b087ed4205a2a082d5aea0c3a2065d6",
+    "id_ood_common_test_gap.pdf": "2428c52c6bdc944ad317a25b875da622dd437fe5efea7b2e96812da44ee0faa3",
+    "id_ood_common_test_gap.png": "c7f4ccaaf19b82fdb5033ac1e3a6c7b1ebf7ba572ce80b8fbd95b105f9679a60",
+    "source_contribution.pdf": "6a8ca81be033d0064fc599987fbd3237afd17633bc9fd3fe3f89d9c0f3fc5cdd",
+    "source_contribution.png": "8b34615e93764b7c5b74e0a4790777cea30f4cc99a4f335e9c583433d8e99e0b",
+    "selected_score_shift.pdf": "4c9bcaa4cc6011f5dcdf27330d26e39269ebfffa6b20f713206c195aaf23a99c",
+    "selected_score_shift.png": "e73b6ac7033651359c7ce24ad2dc6e6daae27655f9bb74dad80d262d4b9518ba",
+    "canonicalization_effect.pdf": "d6a1011d2de1fd46b4bec48d41328d30b64f7814ad5b315b3f629a838875b136",
+    "canonicalization_effect.png": "14ccd25ced5c3870f27d3ca262413d52758a51280cf26c0bc217401945d21d07",
+    "controlled_separability.pdf": "3adf36df0a2f63628e0e5c42fa5ca2c512a3dd13e54d65c9a9a5f705acf9baf7",
+    "controlled_separability.png": "fd9c7db6e1b8aa2a3eb5d935e4ac45d5539f912010ee63679d53257c3f96e418"
+  }
+}

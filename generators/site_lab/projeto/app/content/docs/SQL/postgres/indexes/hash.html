@@ -1,0 +1,5 @@
+<h1>Hash Indexes</h1>
+<p>Hash indexes support equality comparisons. B-tree is usually the more general default choice.</p>
+<pre><code>CREATE INDEX sessions_token_hash_idx
+ON sessions USING hash (token);
+SELECT * FROM sessions WHERE token = $1;</code></pre>

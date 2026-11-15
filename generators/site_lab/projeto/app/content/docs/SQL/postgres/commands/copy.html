@@ -1,0 +1,7 @@
+<h1>COPY</h1>
+<p><code>COPY</code> transfers table data to or from a file or standard input/output. It is commonly used for efficient bulk loading and export.</p>
+<pre><code>COPY products (sku, name, price)
+FROM STDIN WITH (FORMAT csv, HEADER true);</code></pre>
+<p>Use <code>\copy</code> in the <code>psql</code> client when the client, rather than the database server, should access the local file system.</p>
+<pre><code>COPY (SELECT order_id, total FROM orders WHERE status = 'paid')
+TO STDOUT WITH (FORMAT csv, HEADER true);</code></pre>

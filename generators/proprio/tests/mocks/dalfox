@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Mock de dalfox para testes locais SEM rede. Só registra argumentos.
+printf '%s ' "MOCK dalfox called with:" "$@" >> "${MOCK_LOG:-/tmp/mock-dalfox.log}"
+printf '\n' >> "${MOCK_LOG:-/tmp/mock-dalfox.log}"
+[[ " $* " == *" version "* ]] && echo "dalfox/mock (dev)"
+exit "${MOCK_EXIT:-0}"

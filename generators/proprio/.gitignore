@@ -1,0 +1,50 @@
+# =============================================================================
+# .gitignore — nunca versionar dados reais, segredos ou saídas de execução
+# =============================================================================
+
+# Segredos e ambiente
+.env
+*.secret
+*.token
+*.cookie
+
+# Configuração real do operador (apenas os .example são versionados)
+config/scope.txt
+config/targets.txt
+config/targets-*.txt
+config/headers.txt
+config/cookies.txt
+config/profiles/custom.env
+
+# Saídas de execução
+output/*
+!output/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Wordlists de terceiros baixadas (PayloadsAllTheThings, SecLists) — não
+# versionar (licença própria + tamanho). Baixe localmente quando precisar.
+wordlists/payloadsallthethings/
+wordlists/seclists/
+wordlists/fuzzdb/
+wordlists/payload-box/
+# Listas consolidadas a partir de terceiros (mantém só os *.example no Git)
+wordlists/custom/sqli.txt
+wordlists/custom/xss.txt
+wordlists/custom/paths.txt
+
+# Bytecode Python
+__pycache__/
+*.pyc
+
+# Estado de orquestração Orca/Codex (nunca versionar sessões, PID, TTY)
+.orca/
+.agent-handoff/
+
+# Diversos
+*.log
+*.tmp
+wordlists/base/
+wordlists/synthetic/
+wordlists/dataset/
+jogo_vi/

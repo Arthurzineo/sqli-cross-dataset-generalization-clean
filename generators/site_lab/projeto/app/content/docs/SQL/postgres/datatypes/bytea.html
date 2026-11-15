@@ -1,0 +1,7 @@
+<h1>Bytea</h1>
+<p><code>bytea</code> stores binary data such as hashes or small file payloads. Large objects may be more suitable for very large values.</p>
+<pre><code>CREATE TABLE file_checksums (
+  file_id bigint PRIMARY KEY,
+  digest bytea NOT NULL
+);
+SELECT encode(digest, 'hex') FROM file_checksums;</code></pre>

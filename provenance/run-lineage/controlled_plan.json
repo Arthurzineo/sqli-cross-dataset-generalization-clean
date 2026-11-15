@@ -1,0 +1,98 @@
+{
+  "paired_id_plus_lodo_fits": 420,
+  "separability_fits": 30,
+  "fixed_validation_contribution_upper_bound": 1470,
+  "contribution_note": "exact count depends on effective training sources, excluding frozen validation sources",
+  "targets": [
+    "proprio",
+    "csic",
+    "ecml",
+    "srbh",
+    "artificial_sqli",
+    "site_cooking",
+    "site_sqli"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    1337,
+    9001
+  ],
+  "models": [
+    "logistic",
+    "catboost",
+    "mlp"
+  ],
+  "pilot_cap": 0,
+  "resources": {
+    "available_ram_bytes": 11575709696,
+    "cpu_count": 24,
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "new_training_started": false,
+  "config": {
+    "protocol": "paired_raw_origin_v1",
+    "output": "complementos_generalizacao_v1",
+    "datasets": [
+      "proprio",
+      "csic",
+      "ecml",
+      "srbh",
+      "artificial_sqli",
+      "site_cooking",
+      "site_sqli"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026,
+      1337,
+      9001
+    ],
+    "models": [
+      "logistic",
+      "catboost",
+      "mlp"
+    ],
+    "representations": [
+      "RAW",
+      "CANONICALIZED"
+    ],
+    "threads": 2,
+    "max_address_space_gib": 12,
+    "min_available_ram_gib": 2,
+    "test_fraction": 0.2,
+    "validation_fraction": 0.2,
+    "separability_cap_per_dataset_class": 2500,
+    "separability_conditions": [
+      "all",
+      "benign",
+      "malicious"
+    ],
+    "save_checkpoints": false,
+    "model_config": {
+      "logistic": {
+        "C": 1.0,
+        "max_iter": 500
+      },
+      "catboost": {
+        "iterations": 200,
+        "depth": 5,
+        "learning_rate": 0.05,
+        "patience": 15
+      },
+      "mlp": {
+        "hidden": [
+          64,
+          32
+        ],
+        "epochs": 40,
+        "batch_size": 128,
+        "patience": 6
+      }
+    },
+    "pilot_cap": 0
+  }
+}

@@ -1,0 +1,6 @@
+<h1>TRUNCATE</h1>
+<p><code>TRUNCATE</code> quickly removes all rows from one or more tables. Unlike a row-by-row <code>DELETE</code>, it takes an exclusive lock and does not scan individual rows.</p>
+<pre><code>TRUNCATE TABLE import_staging
+RESTART IDENTITY
+CASCADE;</code></pre>
+<p><code>RESTART IDENTITY</code> resets owned sequences, while <code>CASCADE</code> also truncates tables that reference the target through foreign keys.</p>

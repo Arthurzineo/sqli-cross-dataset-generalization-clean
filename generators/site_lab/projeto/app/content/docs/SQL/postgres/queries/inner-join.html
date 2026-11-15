@@ -1,0 +1,5 @@
+<h1>INNER JOIN</h1>
+<p><code>INNER JOIN</code> returns only rows for which the join condition matches on both sides.</p>
+<pre><code>SELECT p.title, a.name
+FROM posts AS p
+INNER JOIN authors AS a ON a.author_id = p.author_id;</code></pre>

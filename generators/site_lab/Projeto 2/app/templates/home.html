@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home | The Curious Kitchen Wiki{% endblock %}
+
+{% block content %}
+  <section class="docs-page" aria-labelledby="home-heading">
+    <h1 id="home-heading">The Curious Kitchen Wiki</h1>
+    <p>Explore recipes, practical cooking guides, and friendly advice from home cooks.</p>
+    <ul class="docs-list">
+      <li class="docs-list-item">
+        <a href="{{ url_for('pages.docs_list') }}">Recipe cards</a>
+        <p>Browse quick guides for everyday dishes and kitchen techniques.</p>
+      </li>
+      <li class="docs-list-item">
+        <a href="/recipes/">Cooking wiki</a>
+        <p>SELECT a recipe, discover WHERE ingredients shine, and UNION flavors from different traditions.</p>
+      </li>
+      <li class="docs-list-item">
+        <a href="{{ url_for('pages.forum') }}">Community kitchen</a>
+        <p>Ask real cooking questions and exchange thoughtful answers.</p>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

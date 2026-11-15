@@ -1,0 +1,9 @@
+<h1>CREATE TABLE</h1>
+<p><code>CREATE TABLE</code> defines a new relation, its columns, data types, defaults, and constraints. Constraints express rules that PostgreSQL enforces for every row.</p>
+<pre><code>CREATE TABLE invoices (
+  invoice_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  customer_id bigint NOT NULL REFERENCES customers(customer_id),
+  total numeric(12, 2) NOT NULL CHECK (total &gt;= 0),
+  issued_at timestamptz NOT NULL DEFAULT now()
+);</code></pre>
+<p>Choose types and constraints to model data rules close to the table that owns the data.</p>

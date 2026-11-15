@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "features": [
+    "sql_select",
+    "sql_delete",
+    "sql_drop",
+    "sql_from",
+    "sql_or",
+    "sql_and",
+    "sql_order",
+    "sql_table",
+    "sql_comment_dash",
+    "sql_comment_block"
+  ],
+  "feature_group": "sqli",
+  "selection_rule": "Within group: descending historical Top-10 frequency, then ascending mean rank, then feature name. SQL group includes only sql_*; lexical group excludes sql_*, xss_* and path_traversal. Both groups are lexical counts, not semantic SQL parsing.",
+  "ranking_file": "<PROJECT_ROOT>/artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/derived/historical_stable_features_snapshot.parquet",
+  "ranking_sha256": "509bee84f7f640cd08e1b2c2f564bd6703115fcdc03e8f2a4a4eecd88923d1c6",
+  "baseline_metric_files": [
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_ab1ae563ae92575bf7c24f21f62c/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_4897287be9ab2787e384cac05941/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_7c770489435712cc526ccf76a2b7/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_a9b8a53fd1858ef8fd2780a381e5/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_f578d740b90152cb3245b49dd341/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_d8b7c84840d56a5580ed772faebe/metrics.json",
+    "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_59d06c8863e21a6212bada03b2af/metrics.json"
+  ],
+  "note": "Exploratory retrospective ablation: fixed Top-10 from historical global LODO rankings. Feature selection is not nested per held-out target; other historical folds include that target as a source. One seed only. Baseline64 reuses saved controlled results for the same seed and exact splits. Thresholds are reselected independently on source validation after each fit.",
+  "runner_sha256": "15fc37ae528143c3a9979d2f4ea0a56b7c8bf95995d57ffd6037462c4ae1b32f",
+  "source_code_sha256": {
+    "<PROJECT_ROOT>/artigo/config/datasets.yaml": "3ef22e973746bee1c8cd1a30d50b72f1622fc4604bb4debb0b72b4adcd9e0f2c",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/common.py": "f8b79831def82eba0796cadce8159c5412703a956afbf83ec45e4945e7cf7c58",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/consolidate.py": "fc6fd39e6d4deef1903d05ec039b353af7622bcdd2e82ac3008693a6a64d085f",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/existing_analysis.py": "3d60bb9456f12a3aa3072757193c10b8d59af5f5e431968cafaa6fcb70942af6",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/run.py": "8c175ae79cbef978802f678ca466d8eec0fb7254f3315e2b2b24da2dbdb67397",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/test_supplemental.py": "3092c5509f92256c62b25e1da7e39332930ec1cb37568be772bb53709eedf213",
+    "<PROJECT_ROOT>/artigo/src/data/loader.py": "2c8ef0ca67be30a44d9af1a20157d55de5a82376273b3605cb2c87eca518ae4d",
+    "<PROJECT_ROOT>/artigo/src/data/splits.py": "8d46777e6e0128ed632638af0a8e9bf1d03fc5acf991a9e0339fb5d48a77e030",
+    "<PROJECT_ROOT>/artigo/src/evaluation/metrics.py": "5d0ac4534cc483316a282cfb7717b81b75882b9f6dc4cb2cf1c4257a8a3da47a",
+    "<PROJECT_ROOT>/artigo/src/features/lexical.py": "4d3fa10385ef122b21a99514e028537a7d44c80e8b23e62f35e4ef85d4ca9957",
+    "<PROJECT_ROOT>/artigo/src/models/classical.py": "1c259353aa4457608487bb3b8a6cc97932803ef451c37889070265cc84c5f7c8",
+    "<PROJECT_ROOT>/artigo/src/utils/config.py": "0034e7d07a6c8739811ee391019d7821f5276d6f2d6cb1ca6c12679caca651c2",
+    "<PROJECT_ROOT>/artigo/src/utils/provenance.py": "661d89292bdb9df11ca3ad1ec827b50e7c916d60512cddb2e1ff927f3f76edba"
+  }
+}

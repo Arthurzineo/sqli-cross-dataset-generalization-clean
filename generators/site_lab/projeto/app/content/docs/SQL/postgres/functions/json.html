@@ -1,0 +1,6 @@
+<h1>JSON Functions</h1>
+<p>PostgreSQL supports JSON and JSONB operators and functions for extracting, building, and querying structured values.</p>
+<pre><code>SELECT payload -&gt;&gt; 'email' AS email
+FROM events
+WHERE payload -&gt; 'flags' ? 'priority';
+SELECT jsonb_build_object('id', id, 'name', name) FROM products;</code></pre>

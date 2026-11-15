@@ -1,0 +1,10 @@
+<h1>INSERT</h1>
+<p><code>INSERT</code> adds rows to a table. Supply a column list to make the mapping from values to columns explicit, and use <code>RETURNING</code> when the new row must be read immediately.</p>
+<pre><code>INSERT INTO customers (name, email, created_at)
+VALUES ('Ada Lovelace', 'ada@example.test', now())
+RETURNING customer_id, created_at;</code></pre>
+<p>PostgreSQL can insert multiple rows or insert the output of a <code>SELECT</code>. Conflict handling is available with <code>ON CONFLICT</code>.</p>
+<pre><code>INSERT INTO inventory (sku, quantity)
+VALUES ('book-001', 4)
+ON CONFLICT (sku)
+DO UPDATE SET quantity = inventory.quantity + EXCLUDED.quantity;</code></pre>

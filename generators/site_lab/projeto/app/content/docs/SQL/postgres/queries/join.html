@@ -1,0 +1,8 @@
+<h1>JOIN</h1>
+<p><code>JOIN</code> combines related rows from two relations using an <code>ON</code> condition or matching <code>USING</code> columns.</p>
+<pre><code>SELECT o.order_id, c.name, o.total
+FROM orders AS o
+JOIN customers AS c ON c.customer_id = o.customer_id
+WHERE o.status = 'paid'
+ORDER BY o.created_at DESC;</code></pre>
+<p>A plain <code>JOIN</code> is an inner join. Choose an outer join when unmatched rows must remain visible.</p>

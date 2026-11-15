@@ -1,0 +1,7 @@
+{
+  "analysis": "3.3",
+  "completed_at": "2026-11-02T17:28:39.627576",
+  "id_ood_gap_calculated": false,
+  "reason": "LODO solicitado totalizou 420 fits; gaps válidos exigiriam mais 420 fits ID",
+  "wall_seconds": 832.5489373479941
+}

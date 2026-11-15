@@ -1,0 +1,5 @@
+<h1>IS NULL</h1>
+<p>Use <code>IS NULL</code> and <code>IS NOT NULL</code> to test missing values; equality with NULL evaluates to unknown.</p>
+<pre><code>SELECT customer_id, phone
+FROM customers
+WHERE phone IS NULL OR mobile_phone IS NOT NULL;</code></pre>

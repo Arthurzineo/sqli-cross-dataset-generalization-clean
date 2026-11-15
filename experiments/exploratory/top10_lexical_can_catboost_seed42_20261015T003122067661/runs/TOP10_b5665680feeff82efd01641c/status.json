@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED",
+  "experiment_id": "TOP10_b5665680feeff82efd01641c",
+  "outputs_sha256": {
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b5665680feeff82efd01641c/checkpoint.joblib": "8405aed48b6360b6ab48da971b3eced880f7f13d2e205d7734a58d996c7aad6e",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b5665680feeff82efd01641c/feature_importance.parquet": "aefbd437775bc70dd60302c452b5bf10b0359146ccf345c6a1c2271735810add",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b5665680feeff82efd01641c/metrics.json": "29ad7aa389e382b34bd61a43c883594cfed0970357c92393b1c55791c5b3d346",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b5665680feeff82efd01641c/predictions.parquet": "5f8e4f185b4be6ff259a3bb287ab95047f03b57233e93cec9729a401d4c5b852"
+  },
+  "finished_at": "2026-10-15T03:31:23.904735+00:00"
+}

@@ -1,0 +1,7 @@
+<h1>Value Expressions</h1>
+<p>A value expression produces a scalar value. PostgreSQL accepts constants, column references, function calls, operators, casts, and subqueries where an expression is expected.</p>
+<pre><code>SELECT price * quantity AS line_total,
+       created_at::date AS order_date
+FROM order_lines
+WHERE quantity + 1 &gt; 3;</code></pre>
+<p>Expressions can appear in a <code>SELECT</code> list, a <code>WHERE</code> condition, an <code>ORDER BY</code> clause, and many command arguments.</p>

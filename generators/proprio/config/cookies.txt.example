@@ -1,0 +1,9 @@
+# =============================================================================
+# cookies.txt.example — copie para cookies.txt (0600).
+#   cp config/cookies.txt.example config/cookies.txt
+#   chmod 600 config/cookies.txt
+# Uma string de cookie por linha (formato "nome=valor; nome2=valor2").
+# NÃO versione cookies reais — cookies.txt está no .gitignore.
+# =============================================================================
+
+PHPSESSID=exemplo-de-sessao-de-laboratorio; security=low

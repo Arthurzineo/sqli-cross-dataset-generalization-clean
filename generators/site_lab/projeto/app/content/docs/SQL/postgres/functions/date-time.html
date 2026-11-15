@@ -1,0 +1,6 @@
+<h1>Date and Time Functions</h1>
+<p>PostgreSQL date and time functions format, truncate, compare, and calculate intervals from temporal values.</p>
+<pre><code>SELECT date_trunc('month', created_at),
+       age(now(), created_at)
+FROM events;
+SELECT current_timestamp + interval '2 days';</code></pre>

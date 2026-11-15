@@ -1,0 +1,10 @@
+<h1>Identifiers and Keywords</h1>
+<p>Identifiers name tables, columns, schemas, and other database objects. Unquoted identifiers are folded to lower case; double quotes preserve spelling and case.</p>
+<pre><code>CREATE TABLE sales_order (
+  order_id bigint PRIMARY KEY,
+  created_at timestamptz NOT NULL
+);
+
+SELECT "OrderId"
+FROM "SalesReport";</code></pre>
+<p>Keywords such as <code>SELECT</code> and <code>JOIN</code> have syntactic meaning. Prefer ordinary lower-case identifiers unless quoted names are necessary.</p>

@@ -1,0 +1,5 @@
+<h1>B-tree Indexes</h1>
+<p>B-tree is PostgreSQL's default index type and supports equality, range comparisons, and ordered scans.</p>
+<pre><code>CREATE INDEX orders_created_at_idx
+ON orders (created_at DESC);
+SELECT * FROM orders WHERE created_at &gt;= current_date ORDER BY created_at DESC;</code></pre>

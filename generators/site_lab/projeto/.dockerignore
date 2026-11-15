@@ -1,0 +1,10 @@
+.git
+.gitignore
+db/lab.db
+logs/*
+!logs/.gitkeep
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/

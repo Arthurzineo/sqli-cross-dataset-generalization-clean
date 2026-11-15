@@ -1,0 +1,8 @@
+# Consolidado em 2026-07-29T13:44:49Z (pos-revisao Codex + politica 'so payload completo')
+# sha256  arquivo
+8e4333ec191a0d761b106ed0c64bec85b502bba581f59e5235b5b466dd6a39ec *wordlists/base/sqli-web.txt
+b6ddc8aaa800607cdf859fc1e6536b7238be084227f1e3d7e17e68316bf39eb9 *wordlists/base/xss-web.txt
+f0c9edae7ec05aae451ce3c503a9d09e803c545e4b6991c6c0e6f235e02995b8 *wordlists/synthetic/sqli-synthetic.txt
+7d94a786f7d8550ef81549f726c6a527ff080ee824e350037f0b4e3f04fdfd3c *wordlists/synthetic/xss-synthetic.txt
+3925ccc8652a1d6fcd18f7d559cd90316ec5e7d1e2aefff2728f2c6649eda5fb *wordlists/custom/sqli.txt
+3227a2770361d71c266ad294a5304e14a875140d668a534779b9bbaf964b3de4 *wordlists/custom/xss.txt

@@ -1,0 +1,9 @@
+<h1>CREATE MATERIALIZED VIEW</h1>
+<p><code>CREATE MATERIALIZED VIEW</code> stores the result of a query physically. It is useful for expensive summaries that can be refreshed on a schedule.</p>
+<pre><code>CREATE MATERIALIZED VIEW customer_order_totals AS
+SELECT customer_id, count(*) AS order_count, sum(total) AS total_spend
+FROM orders
+GROUP BY customer_id;
+
+REFRESH MATERIALIZED VIEW customer_order_totals;</code></pre>
+<p>Unlike a normal view, a materialized view can become stale until it is refreshed.</p>

@@ -1,0 +1,16 @@
+{
+  "id": "example-0001",
+  "type": "answers",
+  "topic": "join",
+  "count": 3,
+  "context": {
+    "title": "When should I use LEFT JOIN instead of INNER JOIN?",
+    "body": "My row count changes when I switch between them. Can someone explain with a small example?"
+  },
+  "status": "pending",
+  "items_hint": [
+    {"persona": "", "text": ""},
+    {"persona": "", "text": ""},
+    {"persona": "", "text": ""}
+  ]
+}

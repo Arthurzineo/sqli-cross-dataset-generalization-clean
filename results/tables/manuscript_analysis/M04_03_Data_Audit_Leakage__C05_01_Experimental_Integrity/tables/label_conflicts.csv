@@ -1,0 +1,5 @@
+row_id,dataset,representation,normalization,n,unique,duplicate_rows_all,duplicate_excess,label_conflict_keys,source_file,experiment_ids
+d75bc256713bb92abcea,srbh,CANONICALIZED,exact,103092,102735,618,357,68,artigo/datasets/original_copies/decoded/srbh.csv,[]
+1ebdc4c801d4c52c3663,srbh,CANONICALIZED,lowercase,103092,100553,4979,2539,68,artigo/datasets/original_copies/decoded/srbh.csv,[]
+8d934a3b76225da08f02,srbh,CANONICALIZED,whitespace,103092,102735,618,357,68,artigo/datasets/original_copies/decoded/srbh.csv,[]
+4195c512d8ad927b7091,srbh,CANONICALIZED,canonical_key,103092,100553,4979,2539,68,artigo/datasets/original_copies/decoded/srbh.csv,[]

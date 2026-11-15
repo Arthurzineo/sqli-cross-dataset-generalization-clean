@@ -1,0 +1,5 @@
+<h1>BRIN Indexes</h1>
+<p>BRIN indexes summarize ranges of physical table blocks and are compact for very large tables whose values correlate with row order.</p>
+<pre><code>CREATE INDEX events_occurred_brin_idx
+ON events USING brin (occurred_at);
+SELECT * FROM events WHERE occurred_at &gt;= now() - interval '1 day';</code></pre>

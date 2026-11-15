@@ -1,0 +1,5 @@
+<h1>LIKE and ILIKE</h1>
+<p><code>LIKE</code> performs case-sensitive pattern matching; <code>ILIKE</code> is case-insensitive. Percent matches any sequence and underscore matches one character.</p>
+<pre><code>SELECT email FROM customers
+WHERE email ILIKE '%@example.test'
+  AND name LIKE 'A_%';</code></pre>

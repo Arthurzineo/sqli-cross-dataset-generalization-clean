@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Mock de ffuf para testes locais SEM rede. Só registra argumentos e, quando
+# recebe -o <arquivo> com -of json, grava um JSON de resultados de exemplo
+# (inclui um host fora do escopo para exercitar o filtro da consolidação).
+printf '%s ' "MOCK ffuf called with:" "$@" >> "${MOCK_LOG:-/tmp/mock-ffuf.log}"
+printf '\n' >> "${MOCK_LOG:-/tmp/mock-ffuf.log}"
+[[ " $* " == *" -V "* ]] && { echo "ffuf/mock (dev)"; exit "${MOCK_EXIT:-0}"; }
+
+# Extrai -o <arquivo>
+out=""
+prev=""
+for a in "$@"; do
+  [[ "$prev" == "-o" ]] && { out="$a"; prev=""; continue; }
+  prev="$a"
+done
+
+if [[ -n "$out" ]]; then
+  cat > "$out" <<'JSON'
+{
+  "results": [
+    {"url": "http://app.lab.local/admin", "status": 200},
+    {"url": "http://app.lab.local/login?x=1", "status": 200},
+    {"url": "http://app.lab.local/admin", "status": 200},
+    {"url": "http://evil.com/secret", "status": 200}
+  ]
+}
+JSON
+fi
+exit "${MOCK_EXIT:-0}"

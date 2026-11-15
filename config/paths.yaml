@@ -1,0 +1,13 @@
+project_root: .
+dataset_raw: datasets/original_copies/raw
+dataset_decoded: datasets/original_copies/decoded
+dataset_processed: datasets/processed
+metadata: datasets/metadata
+runs: runs
+results_raw: results/raw
+results_consolidated: results/runs/historical/index
+tables: results/tables
+statistics: results/statistics
+figures: figures
+reports: reports
+

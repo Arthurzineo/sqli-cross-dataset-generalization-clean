@@ -1,0 +1,10 @@
+row_id,category,n_files,bytes,gib,experiment_ids,source_file
+79e8225b504dd431a369,results/raw,16655,72809960,0.06780955940485,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+bf16aa7c2649449a054a,runs/checkpoints,16654,2284877017,2.1279575461521745,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+7c94c06d005f270ebb75,runs/feature_importance,5480,30223763,0.02814807277172804,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+4ba0e174f01a1bae7c64,runs/logs,16506,10066376,0.009375043213367462,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+51083bbafd261e527811,runs/manifests,33307,157041659466,146.25644261576235,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+11f4ef098c5942a7f195,runs/predictions,16654,122588034255,114.16900367941707,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+0527c56765e28ae977f9,runs/probabilities,16654,16255933182,15.139517543837428,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+3f2a8ad2a49aedd2bf9c,runs/status,16715,2803670,0.0026111211627721786,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet
+366bc927158d4663cee4,runs/thresholds,16654,5355219,0.004987436346709728,[],artigo/analise_resultados_tcc/_global/file_inventory.parquet

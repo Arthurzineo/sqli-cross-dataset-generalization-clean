@@ -1,0 +1,24 @@
+{
+  "hardware": {
+    "hostname": "pop-os",
+    "os": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "cpu_count": 24,
+    "ram_bytes": 16465305600,
+    "gpu": [
+      "NVIDIA GeForce RTX 4060 Laptop GPU, 580.173.02"
+    ],
+    "cuda": "13.0"
+  },
+  "software_versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "catboost": "1.2.10",
+    "torch": "2.13.0",
+    "transformers": "5.15.0",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.1"
+  }
+}

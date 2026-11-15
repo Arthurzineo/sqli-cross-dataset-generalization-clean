@@ -1,0 +1,109 @@
+datasets:
+  proprio:
+    family: ojs
+    source_type: captured_application
+    availability: restricted
+    raw_source: datasets/restricted/proprio/raw/proprio.tsv
+    decoded_source: datasets/restricted/proprio/canonicalized/proprio.tsv
+    raw_file: proprio.tsv
+    decoded_file: proprio.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    year: null
+    notes: Aplicação OJS própria.
+  csic:
+    family: csic
+    source_type: synthetic_ecommerce
+    availability: external
+    raw_source: datasets/external/csic/raw/csic.csv
+    decoded_source: datasets/external/csic/canonicalized/csic.csv
+    raw_file: csic.csv
+    decoded_file: csic.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2010
+    notes: HTTP CSIC 2010.
+  ecml:
+    family: ecml
+    source_type: benchmark
+    availability: external
+    raw_source: datasets/external/ecml/raw/ecml.csv
+    decoded_source: datasets/external/ecml/canonicalized/ecml.csv
+    raw_file: ecml.csv
+    decoded_file: ecml.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2007
+    notes: ECML/PKDD 2007.
+  srbh:
+    family: srbh
+    source_type: honeypot
+    availability: included
+    raw_source: datasets/processed/historical/raw/srbh.csv
+    decoded_source: datasets/processed/historical/canonicalized/srbh.csv
+    raw_file: srbh.csv
+    decoded_file: srbh.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [URL, content]
+    label_column: classification
+    year: 2020
+    notes: SR-BH, curado para SQLi.
+  artificial:
+    family: artificial
+    source_type: synthetic
+    availability: external
+    raw_source: datasets/external/artificial/raw/artificial.tsv
+    decoded_source: datasets/external/artificial/canonicalized/artificial.tsv
+    raw_file: artificial.tsv
+    decoded_file: artificial.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Variante artificial original; não usar junto com artificial_sqli como fontes independentes.
+  artificial_sqli:
+    family: artificial
+    source_type: synthetic
+    availability: included
+    raw_source: datasets/processed/historical/raw/artificial_sqli.tsv
+    decoded_source: datasets/processed/historical/canonicalized/artificial_sqli.tsv
+    raw_file: artificial_sqli.tsv
+    decoded_file: artificial_sqli.tsv
+    separator: "\t"
+    encoding: latin-1
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Ataques SQLi regenerados; mesma família do artificial.
+  site_cooking:
+    family: site_lab
+    source_type: controlled_lab
+    availability: included
+    raw_source: datasets/processed/historical/raw/site_cooking.csv
+    decoded_source: datasets/processed/historical/canonicalized/site_cooking.csv
+    raw_file: site_cooking.csv
+    decoded_file: site_cooking.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Mesmo laboratório/gerador de site_sqli.
+  site_sqli:
+    family: site_lab
+    source_type: controlled_lab
+    availability: included
+    raw_source: datasets/processed/historical/raw/site_sqli.csv
+    decoded_source: datasets/processed/historical/canonicalized/site_sqli.csv
+    raw_file: site_sqli.csv
+    decoded_file: site_sqli.csv
+    separator: ","
+    encoding: utf-8
+    text_columns: [url, body]
+    label_column: sqli
+    notes: Mesmo laboratório/gerador de site_cooking.

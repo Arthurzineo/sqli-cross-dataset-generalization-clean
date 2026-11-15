@@ -1,0 +1,9 @@
+<h1>CREATE TABLE AS</h1>
+<p><code>CREATE TABLE AS</code> creates a table from the result of a query. The new table receives the selected columns and rows at execution time.</p>
+<pre><code>CREATE TABLE monthly_sales AS
+SELECT date_trunc('month', paid_at)::date AS month,
+       sum(total) AS revenue
+FROM payments
+WHERE status = 'settled'
+GROUP BY 1;</code></pre>
+<p>Use <code>WITH NO DATA</code> to create the table shape without copying result rows.</p>

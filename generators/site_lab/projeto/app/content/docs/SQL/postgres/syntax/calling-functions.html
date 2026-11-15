@@ -1,0 +1,7 @@
+<h1>Calling Functions</h1>
+<p>Functions are invoked with parentheses after the function name. Arguments can be positional, named with <code>=&gt;</code>, or omitted when a default value is declared.</p>
+<pre><code>SELECT substring('postgresql' FROM 1 FOR 4);
+SELECT make_interval(days =&gt; 2, hours =&gt; 6);
+SELECT date_trunc('month', created_at)
+FROM events;</code></pre>
+<p>Named notation is useful when a function has several optional parameters because the call states which argument receives each value.</p>

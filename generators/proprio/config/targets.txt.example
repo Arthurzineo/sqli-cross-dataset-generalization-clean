@@ -1,0 +1,22 @@
+# =============================================================================
+# targets.txt.example — copie para targets.txt e liste UMA URL por linha.
+#   cp config/targets.txt.example config/targets.txt
+#
+# Formato: apenas a URL. Nada mais.
+#   - Linhas vazias e iniciadas por # são ignoradas.
+#   - Toda URL é validada (http/https, com host, sem fragmento) e checada
+#     contra config/scope.txt.
+#
+# Para cada URL o script gera automaticamente DUAS variantes:
+#   - GET  : testa a URL como está (parâmetros na query).
+#   - POST : reaproveita os parâmetros da query como corpo
+#            (application/x-www-form-urlencoded).
+#   Se a URL não tiver parâmetros (sem "?..."), o POST é pulado
+#   (não há o que injetar) e registrado no ledger.
+# =============================================================================
+
+https://ojs.example.org/index.php/revista-a/login/signIn
+https://ojs.example.org/index.php/revista-b/issue/current
+https://ojs.example.org/index.php/index/user/setLocale/pt_BR?source=%2Findex.php%2F
+https://ojs.example.org/index.php/index/login
+https://ojs.example.org/index.php/index/user/register

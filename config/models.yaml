@@ -1,0 +1,22 @@
+models:
+  logistic:
+    C: 1.0
+    max_iter: 500
+  catboost:
+    iterations: 200
+    depth: 5
+    learning_rate: 0.05
+    patience: 15
+  mlp:
+    hidden: [64, 32]
+    epochs: 40
+    batch_size: 128
+    patience: 6
+  codebert:
+    model: microsoft/codebert-base
+    revision: 3b0952feddeffad0063f274080e3c23d75e7eb39
+    max_length: 256
+    pooling: cls
+    batch_size: 8
+    frozen: true
+

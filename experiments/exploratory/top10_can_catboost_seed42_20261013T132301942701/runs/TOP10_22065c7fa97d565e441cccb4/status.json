@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED",
+  "experiment_id": "TOP10_22065c7fa97d565e441cccb4",
+  "outputs_sha256": {
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_can_catboost_seed42_20261013T132301942701/runs/TOP10_22065c7fa97d565e441cccb4/checkpoint.joblib": "58714dfe693e455e1cd70d73fe418cd9ca17b74e0c90472a2b47dc7b318d7d8c",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_can_catboost_seed42_20261013T132301942701/runs/TOP10_22065c7fa97d565e441cccb4/feature_importance.parquet": "ade7ad5503d2c820ea270abd5e9e388b8673c50e81ef34860737dd92f96a29f3",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_can_catboost_seed42_20261013T132301942701/runs/TOP10_22065c7fa97d565e441cccb4/metrics.json": "24248c0836d1983064dd3154e07ea92d4ea77711fea1cc2840741b740d9c5dfa",
+    "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_can_catboost_seed42_20261013T132301942701/runs/TOP10_22065c7fa97d565e441cccb4/predictions.parquet": "e31ba5f57082f606acbfb6081df0d0da2611cc7c360ad7f9f48096ae790e83bd"
+  },
+  "finished_at": "2026-10-13T16:23:11.501642+00:00"
+}

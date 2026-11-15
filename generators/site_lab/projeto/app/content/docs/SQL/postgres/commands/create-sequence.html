@@ -1,0 +1,8 @@
+<h1>CREATE SEQUENCE</h1>
+<p><code>CREATE SEQUENCE</code> defines an object that produces ordered numeric values. Identity columns usually manage sequences automatically, but standalone sequences are useful in some designs.</p>
+<pre><code>CREATE SEQUENCE ticket_number_seq
+START WITH 1000
+INCREMENT BY 1;
+
+SELECT nextval('ticket_number_seq');</code></pre>
+<p>Sequence values are not transactional: a rolled-back transaction can still consume a number.</p>

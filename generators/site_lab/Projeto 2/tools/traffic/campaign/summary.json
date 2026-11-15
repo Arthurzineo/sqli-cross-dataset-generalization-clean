@@ -1,0 +1,45 @@
+{
+  "campaign": "project-2-benign-cooking-en",
+  "campaign_started_at": "2026-09-08T23:36:55+00:00",
+  "campaign_finished_at": "2026-09-09T00:01:38+00:00",
+  "baseline_runtime_lines": 864,
+  "raw_final_lines": 31166,
+  "raw_requests_added": 30302,
+  "exact_duplicates_removed": 5,
+  "artifact_lines": 31161,
+  "artifact_sha256": "112247d9b18a04d46ace65b61ded4e1f5aa968c53dfb284dbfe9bda0f94c4e07",
+  "manifests": 18,
+  "sessions": 1296,
+  "recorded_actions": 8647,
+  "generator_errors": [],
+  "methods": {
+    "GET": 26439,
+    "HEAD": 1,
+    "POST": 4721
+  },
+  "statuses": {
+    "200": 24559,
+    "301": 1,
+    "404": 286,
+    "304": 5945,
+    "201": 367,
+    "499": 3
+  },
+  "expected_404s": {
+    "/health": 30,
+    "/docs/SQL/recipes/": 2,
+    "/api/docs/sql/page?path=recipes/select/seasonal-vegetable-soup": 2,
+    "/api/docs/sql/search?q=soup": 2,
+    "/favicon.ico": 250
+  },
+  "persistent_content": {
+    "wiki_pages": 12,
+    "posts": 168,
+    "comments": 427,
+    "docs": 12
+  },
+  "content_validation_failures": [],
+  "language": "English",
+  "domain": "cooking",
+  "runtime_log_after_consolidation": "empty"
+}

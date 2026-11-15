@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-09-26T13:28:42.215373+00:00",
+  "source_ids_exactly_match_master": true,
+  "all_table_rows_have_unique_nonempty_row_id_and_experiment_ids": true,
+  "csv_parquet_agree": true,
+  "n_tables_checked": 38,
+  "every_figure_has_source_table_manifest": true,
+  "all_declared_artifacts_exist": true,
+  "markdown_provenance_sections_present": true,
+  "sampled_original_metric_and_prediction_reconstruction_passed": true,
+  "related_target_sensitivity_reported": true,
+  "historical_protocol_not_pooled_with_supplemental": true,
+  "limitations": "Sampled numerical reconstruction, not recomputation of every cell from raw scores; hashes/manifests cannot prove every historical internal operation."
+}

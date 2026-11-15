@@ -1,0 +1,5 @@
+<h1>Logical Operators</h1>
+<p><code>AND</code>, <code>OR</code>, and <code>NOT</code> combine boolean expressions. Parentheses document intended precedence.</p>
+<pre><code>SELECT * FROM orders
+WHERE (status = 'paid' OR status = 'shipped')
+  AND NOT cancelled;</code></pre>

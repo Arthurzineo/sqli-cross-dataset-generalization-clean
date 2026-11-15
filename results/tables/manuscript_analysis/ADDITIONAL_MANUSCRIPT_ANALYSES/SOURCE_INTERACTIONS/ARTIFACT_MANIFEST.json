@@ -1,0 +1,272 @@
+{
+  "generated_at": "2026-09-27T17:30:24.688771+00:00",
+  "script": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/scripts/finalize_source_interactions.py",
+  "script_sha256": "2a05106f806bfd8cfea310e5f8808039eff6bf496f6f6d64177c0a03568cdd19",
+  "command": "<PROJECT_ROOT>/../../venv/bin/python artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/scripts/finalize_source_interactions.py",
+  "inputs": {
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/marginal_source_additions.parquet": {
+      "sha256": "f47eec47e86bbf261731b7e2d404a4c95c3ca174c89c1bfa4c5d190d6e05cfb4",
+      "bytes": 1601521
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/marginal_source_additions.csv": {
+      "sha256": "d8debf519fd4bca17c8a017611c654f237221fca21efb70eb52206c4a7b70a84",
+      "bytes": 12874748
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/derived/matched_source_additions_per_seed.parquet": {
+      "sha256": "8529f4381df0e0c302e3d8fd8ac9875321bf1bb06a4358a40fe768490e45fdef",
+      "bytes": 3566866
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_LINEAGE.parquet": {
+      "sha256": "2f52a60f37ebf037dcb22ed2dfc0bd162e25d7f38913afd2f8a319c70b6378af",
+      "bytes": 2986742
+    },
+    "artigo/analise_resultados_tcc/_global/master_results.parquet": {
+      "sha256": "a3785e2075d521874a216352217c5548e20f3700217b7b4b3be08682f73e1a33",
+      "bytes": 5267275
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/marginal_gain_by_added_source_target.parquet": {
+      "sha256": "4246375e6b1df6ccec960dfd14d2ff523c0cc3f74bb12145553be047feb2ebb7",
+      "bytes": 1099530
+    },
+    "artigo/figures/final/FIGURE_VALIDATION.json": {
+      "sha256": "a83e483b1da867a0b0b5da14f3c759324e78a200ad7c2adf09033c2ce85c5f10",
+      "bytes": 14606
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/ARTIFACT_MANIFEST.json": {
+      "sha256": "90130c5f5b9f8b919bda61f067d4423316797fdd4b6104685c71491df0e3ed79",
+      "bytes": 10214
+    }
+  },
+  "pdf_copies": [
+    {
+      "filename": "01_lodo_by_target.pdf",
+      "original_pdf": "artigo/figures/final/lodo_by_target.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/lodo_by_target.parquet",
+      "sha256": "5d047b90447e777b34ef7b81545a4308397f4195f174f1368a5dd78ac4bc74ef"
+    },
+    {
+      "filename": "02_id_ood_common_test_gap.pdf",
+      "original_pdf": "artigo/figures/final/id_ood_common_test_gap.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/id_ood_same_test.parquet",
+      "sha256": "2428c52c6bdc944ad317a25b875da622dd437fe5efea7b2e96812da44ee0faa3"
+    },
+    {
+      "filename": "03_generalization_vs_source_count.pdf",
+      "original_pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/figures/generalization_vs_source_count.pdf",
+      "source_table": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/performance_by_source_count_macro.parquet",
+      "sha256": "ec483733c6a704ab2bc1ee2bf78c0e6dacb3cc36d6ee0d39b482eede718f7fb3"
+    },
+    {
+      "filename": "04_marginal_gain_per_added_source.pdf",
+      "original_pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/figures/marginal_gain_per_added_source.pdf",
+      "source_table": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/marginal_source_additions.parquet",
+      "sha256": "147e3aeb6f17f69bac0ca07aec5583ee8e42717ddbdd8999219bf5628de4fd5d"
+    },
+    {
+      "filename": "05_marginal_gain_by_source_and_pool_size.pdf",
+      "original_pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_pool_size.pdf",
+      "source_table": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_and_pool_size.parquet",
+      "sha256": "61bec85843cd50f1d4da0b0720cf9abfa75bcea3a63df2b615f3896be4fafdda"
+    },
+    {
+      "filename": "06_marginal_gain_by_source_and_target.pdf",
+      "original_pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_target.pdf",
+      "source_table": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_target.parquet",
+      "sha256": "10db60c57662ac90c3c3c62f365042d8e2a56b59deb750099e00b11d191576d8"
+    },
+    {
+      "filename": "07_source_contribution.pdf",
+      "original_pdf": "artigo/figures/final/source_contribution.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/source_contribution_by_target.parquet",
+      "sha256": "6a8ca81be033d0064fc599987fbd3237afd17633bc9fd3fe3f89d9c0f3fc5cdd"
+    },
+    {
+      "filename": "08_selected_score_shift.pdf",
+      "original_pdf": "artigo/figures/final/selected_score_shift.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/derived/selected_score_histograms.parquet",
+      "sha256": "4c9bcaa4cc6011f5dcdf27330d26e39269ebfffa6b20f713206c195aaf23a99c"
+    },
+    {
+      "filename": "09_cross_dataset_stable_features.pdf",
+      "original_pdf": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/figures/cross_dataset_stable_features.pdf",
+      "source_table": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/tables/top10_cross_dataset_stable_features.parquet",
+      "sha256": "6867b5beaf5d880a5d1ed7a97b7433967c592256820e06bac437988fb6c11390"
+    },
+    {
+      "filename": "10_canonicalization_effect.pdf",
+      "original_pdf": "artigo/figures/final/canonicalization_effect.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/canonicalization_by_target.parquet",
+      "sha256": "d6a1011d2de1fd46b4bec48d41328d30b64f7814ad5b315b3f629a838875b136"
+    },
+    {
+      "filename": "11_controlled_separability.pdf",
+      "original_pdf": "artigo/figures/final/controlled_separability.pdf",
+      "source_table": "artigo/analise_resultados_tcc/SUPPLEMENTAL_CONTROLLED_ANALYSIS/tables/separability.parquet",
+      "sha256": "3adf36df0a2f63628e0e5c42fa5ca2c512a3dd13e54d65c9a9a5f705acf9baf7"
+    }
+  ],
+  "report_revision": {
+    "original_sha256": "20c624ed5800b64d9060de3673db7f8cbd6e8348e4a8e4c0a272e97227add40a",
+    "updated_sha256": "284a4213338c80af0309ba21ca1681dc6f9c53b0ff8d355546b3b509e966e4e1",
+    "backup": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/evidence/ADDITIONAL_RESULTS_BEFORE_SOURCE_INTERACTIONS.md",
+    "updated": "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/ADDITIONAL_RESULTS_FOR_PAPER.md"
+  },
+  "outputs": {
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/SOURCE_IDENTITY_RESULTS.md": {
+      "sha256": "8bfbf38121ef18a197cb75712f6d04eb46ca7b994a676c8b17a6bd432f6c474b",
+      "bytes": 30714
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/TRACEABILITY.csv": {
+      "sha256": "8996a15b1f008c5fb7b25174d79e4a186b22d0d09df42b60e15f7973fa63fca3",
+      "bytes": 8720
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/FINAL_CHECK.json": {
+      "sha256": "ccfbd4412999ef1b00d3eaa83d2cebea8ae90e41bc2df0c78623ae64e139c874",
+      "bytes": 1554
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/SOURCE_LINEAGE.parquet": {
+      "sha256": "47203b7752ff87570cfb3b38b8ef13bac3520a59d0acd86912458c6e438c22dd",
+      "bytes": 2965193
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_pool_size.png": {
+      "sha256": "330a5201bb79e1e5e140082a8653d7c34c2dd1c10fa822ba8046ed8fbc862519",
+      "bytes": 176168
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_target.png": {
+      "sha256": "8ed0ecee06510e8ac52839b3aece54e1c7042692875b069556039c3ff0b0d2bb",
+      "bytes": 227349
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_pool_size.pdf": {
+      "sha256": "61bec85843cd50f1d4da0b0720cf9abfa75bcea3a63df2b615f3896be4fafdda",
+      "bytes": 35452
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/figures/marginal_gain_by_source_and_target.pdf": {
+      "sha256": "10db60c57662ac90c3c3c62f365042d8e2a56b59deb750099e00b11d191576d8",
+      "bytes": 36623
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/evidence/ADDITIONAL_RESULTS_BEFORE_SOURCE_INTERACTIONS.md": {
+      "sha256": "20c624ed5800b64d9060de3673db7f8cbd6e8348e4a8e4c0a272e97227add40a",
+      "bytes": 31527
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/scripts/finalize_source_interactions.py": {
+      "sha256": "2a05106f806bfd8cfea310e5f8808039eff6bf496f6f6d64177c0a03568cdd19",
+      "bytes": 43471
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_target.parquet": {
+      "sha256": "42b412310f418d7d6ca0cb984f4f8028c6681eb686663390aed9f3eb75f014f5",
+      "bytes": 1259899
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_target_cell_coverage.parquet": {
+      "sha256": "ce16631748b80fb126ce9b83bdc192cffa56f19ed8a957f839f69f0fe56a14c5",
+      "bytes": 1050855
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/context_sign_reversals_same_target_and_size.csv": {
+      "sha256": "743ece85021b37029d2ce1db15ad349cf9a66cc7fea88c01f7826f97498ca04b",
+      "bytes": 1347199
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_and_pool_size.csv": {
+      "sha256": "915c52b06a005ebbbb6abee2b5a22a5a417e8ad50e23bf12425dd5f1cf329aa6",
+      "bytes": 5295151
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_and_pool_size.parquet": {
+      "sha256": "21a782b3352b88bf63bdb7909423623b4d762d4c3e36b1da4b89c3359c92cb42",
+      "bytes": 1150242
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/context_sign_reversals_same_target_and_size.parquet": {
+      "sha256": "6452efe6e526bf193601c4948c609786e3291baf35279e7632269e6e8e915dcf",
+      "bytes": 342260
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_target_cell_coverage.csv": {
+      "sha256": "3b69429ce8996bbb9216151f753e2c1fcd4598fed0f2bc8f52f0d22229a59675",
+      "bytes": 5222065
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/marginal_gain_by_added_source_target.csv": {
+      "sha256": "089e1c08f0983fc50edcc2a17e8288fa793dde70a169f64d00fc60d293213ee8",
+      "bytes": 5496004
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_identity_overview.csv": {
+      "sha256": "034613f91bfb0a091174365223f1717f037079b22ad9a3fc4d84aa2526d02212",
+      "bytes": 5209588
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_identity_overview.parquet": {
+      "sha256": "c41faf4d541dac1bf53d930280319eb795af3aa614669b2ea8528aa569dd53d6",
+      "bytes": 1055600
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_pool_sign_changes.parquet": {
+      "sha256": "d8edf66f97262931b79dd9a9e8b0580c1934102cdc890baf9243fcf1fbada8a5",
+      "bytes": 301550
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/tables/source_pool_sign_changes.csv": {
+      "sha256": "8b25592d6ed74dab3fa0f2f3baffe572c1c4d82397b1af6043e671e5701a22e3",
+      "bytes": 1430707
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/derived/input_pair_verification.parquet": {
+      "sha256": "34c34d5e5a68d31de632c5fdb1b6a05a1634eaa7953e81fc197d8b52c65b60ad",
+      "bytes": 836388
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/derived/input_pair_verification.csv": {
+      "sha256": "a954385db0658e445c977bf3cfbff067fb3bc228b76f7b55608a0496dc5dcb9f",
+      "bytes": 5819697
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/derived/marginal_gain_target_source_pool_size.parquet": {
+      "sha256": "ae3cdb9268b95897b9c3df44fba2fca0318b02ad1e85f74335d148c1d0d12a14",
+      "bytes": 1329964
+    },
+    "artigo/analise_resultados_tcc/ADDITIONAL_MANUSCRIPT_ANALYSES/SOURCE_INTERACTIONS/derived/marginal_gain_target_source_pool_size.csv": {
+      "sha256": "f8b640cd3ec4aa59f2bd2dbf8d54c7cf299690b806743410428c11f5e5c5e8c5",
+      "bytes": 5549424
+    },
+    "artigo/figures/manuscript_final/LATEX_FIGURE_INDEX.md": {
+      "sha256": "63d8d41ca9f0254ab5a8edd3fd04681797802e8e005843fd076c681e3519c856",
+      "bytes": 10531
+    },
+    "artigo/figures/manuscript_final/01_lodo_by_target.pdf": {
+      "sha256": "5d047b90447e777b34ef7b81545a4308397f4195f174f1368a5dd78ac4bc74ef",
+      "bytes": 27991
+    },
+    "artigo/figures/manuscript_final/07_source_contribution.pdf": {
+      "sha256": "6a8ca81be033d0064fc599987fbd3237afd17633bc9fd3fe3f89d9c0f3fc5cdd",
+      "bytes": 35258
+    },
+    "artigo/figures/manuscript_final/06_marginal_gain_by_source_and_target.pdf": {
+      "sha256": "10db60c57662ac90c3c3c62f365042d8e2a56b59deb750099e00b11d191576d8",
+      "bytes": 36623
+    },
+    "artigo/figures/manuscript_final/MANUSCRIPT_FIGURE_TRACEABILITY.md": {
+      "sha256": "54e93b74b094c879e82e865557d7c65f6814a518466e8bdadaf12654f0cefef9",
+      "bytes": 20836
+    },
+    "artigo/figures/manuscript_final/11_controlled_separability.pdf": {
+      "sha256": "3adf36df0a2f63628e0e5c42fa5ca2c512a3dd13e54d65c9a9a5f705acf9baf7",
+      "bytes": 14564
+    },
+    "artigo/figures/manuscript_final/04_marginal_gain_per_added_source.pdf": {
+      "sha256": "147e3aeb6f17f69bac0ca07aec5583ee8e42717ddbdd8999219bf5628de4fd5d",
+      "bytes": 29783
+    },
+    "artigo/figures/manuscript_final/09_cross_dataset_stable_features.pdf": {
+      "sha256": "6867b5beaf5d880a5d1ed7a97b7433967c592256820e06bac437988fb6c11390",
+      "bytes": 14596
+    },
+    "artigo/figures/manuscript_final/05_marginal_gain_by_source_and_pool_size.pdf": {
+      "sha256": "61bec85843cd50f1d4da0b0720cf9abfa75bcea3a63df2b615f3896be4fafdda",
+      "bytes": 35452
+    },
+    "artigo/figures/manuscript_final/03_generalization_vs_source_count.pdf": {
+      "sha256": "ec483733c6a704ab2bc1ee2bf78c0e6dacb3cc36d6ee0d39b482eede718f7fb3",
+      "bytes": 23741
+    },
+    "artigo/figures/manuscript_final/08_selected_score_shift.pdf": {
+      "sha256": "4c9bcaa4cc6011f5dcdf27330d26e39269ebfffa6b20f713206c195aaf23a99c",
+      "bytes": 11836
+    },
+    "artigo/figures/manuscript_final/10_canonicalization_effect.pdf": {
+      "sha256": "d6a1011d2de1fd46b4bec48d41328d30b64f7814ad5b315b3f629a838875b136",
+      "bytes": 28541
+    },
+    "artigo/figures/manuscript_final/02_id_ood_common_test_gap.pdf": {
+      "sha256": "2428c52c6bdc944ad317a25b875da622dd437fe5efea7b2e96812da44ee0faa3",
+      "bytes": 18287
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "source": "wordlists\\seclists\\Discovery\\Web-Content\\common.txt",
+  "source_sha256": "47fb86ca6fb3f97e5491161581900d6d99851fb16764eacddf16aa85617c956a",
+  "ojs_paths": "wordlists\\ojs-standard-paths.txt",
+  "ojs_paths_sha256": "08c020dd27d48c7f77b28352559a94b4898539f2a3d9e0dd549189b53b44ca3e",
+  "entries": 4760
+}

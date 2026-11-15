@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Mock de xsstrike para testes locais SEM rede. Só registra argumentos.
+printf '%s ' "MOCK xsstrike called with:" "$@" >> "${MOCK_LOG:-/tmp/mock-xsstrike.log}"
+printf '\n' >> "${MOCK_LOG:-/tmp/mock-xsstrike.log}"
+exit "${MOCK_EXIT:-0}"

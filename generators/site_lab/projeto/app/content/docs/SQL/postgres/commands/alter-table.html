@@ -1,0 +1,8 @@
+<h1>ALTER TABLE</h1>
+<p><code>ALTER TABLE</code> changes an existing table definition. It can add columns, alter types, add or remove constraints, and rename objects.</p>
+<pre><code>ALTER TABLE customers
+ADD COLUMN preferred_language text NOT NULL DEFAULT 'en';
+
+ALTER TABLE orders
+ADD CONSTRAINT orders_total_positive CHECK (total &gt;= 0);</code></pre>
+<p>Schema changes can lock tables or require rewriting data, so plan them carefully for large production relations.</p>

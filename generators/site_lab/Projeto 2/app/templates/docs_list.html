@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Recipe cards | The Curious Kitchen Wiki{% endblock %}
+
+{% block content %}
+  <section class="docs-page" aria-labelledby="docs-heading">
+    <h1 id="docs-heading">Recipe cards</h1>
+    <ul class="docs-list">
+      {% for doc in docs %}
+        <li class="docs-list-item">
+          <a href="{{ url_for('pages.doc_page', slug=doc['slug']) }}">{{ doc['title'] }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

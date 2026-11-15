@@ -1,0 +1,7 @@
+<h1>UNION</h1>
+<p><code>UNION</code> combines compatible result sets and removes duplicate rows. Use <code>UNION ALL</code> when duplicates are meaningful and no deduplication is needed.</p>
+<pre><code>SELECT email FROM customers WHERE active = true
+UNION
+SELECT email FROM newsletter_subscribers
+ORDER BY email;</code></pre>
+<p>Each branch must return the same number of columns with compatible types. Parenthesize branches when they have their own <code>ORDER BY</code> or <code>LIMIT</code>.</p>

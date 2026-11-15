@@ -1,0 +1,10 @@
+<h1>SQL Comments</h1>
+<p>PostgreSQL supports line comments beginning with <code>--</code> and block comments enclosed by <code>/*</code> and <code>*/</code>. Comments are ignored by the SQL parser.</p>
+<pre><code>-- Return active accounts only
+SELECT id, email
+FROM accounts
+WHERE active = true;
+
+/* Inspect recent orders before deployment */
+SELECT count(*) FROM orders;</code></pre>
+<p>Use comments to record intent, but avoid placing secrets or operational credentials in SQL source.</p>

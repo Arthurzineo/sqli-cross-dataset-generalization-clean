@@ -1,0 +1,11 @@
+# =============================================================================
+# headers.txt.example — copie para headers.txt (0600). Um header por linha.
+#   cp config/headers.txt.example config/headers.txt
+#   chmod 600 config/headers.txt
+# Linhas vazias e iniciadas por # são ignoradas.
+# NÃO versione Authorization/tokens reais — headers.txt está no .gitignore.
+# =============================================================================
+
+X-Forwarded-For: 127.0.0.1
+Accept: application/json
+# Authorization: Bearer <preencha-no-arquivo-real>

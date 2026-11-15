@@ -1,0 +1,131 @@
+{
+  "split_id": "23d170069b499dc03d11cc6f3dbfae4922a5f6ad54e252aeffe480502a97e714",
+  "cache_id": "9161607ac6987977403b1dc44be707e0b38c58ba070c286fe7ccd68a5479c2e4",
+  "split_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/splits/23d170069b499dc03d11cc6f3dbfae4922a5f6ad54e252aeffe480502a97e714.parquet",
+  "sha256": "a417936f71e7998e20311a4a1a5a8ae416f5d9a914ef0e3b407c89cf5c3ee9a1",
+  "audit": {
+    "id_label_conflicts_removed": {},
+    "id_not_applicable": null,
+    "ood_audit": {
+      "mode": "lodo",
+      "target": "site_sqli",
+      "seed": 2026,
+      "cap_per_dataset_class": 0,
+      "same_family_removed": {
+        "site_cooking": 7334
+      },
+      "target_overlap_removed": {},
+      "development_label_conflicts_removed": {},
+      "train_validation_overlap_removed": {},
+      "counts": {
+        "train": [
+          {
+            "dataset": "csic",
+            "y": 0,
+            "n": 1177
+          },
+          {
+            "dataset": "csic",
+            "y": 1,
+            "n": 1177
+          },
+          {
+            "dataset": "ecml",
+            "y": 0,
+            "n": 1650
+          },
+          {
+            "dataset": "ecml",
+            "y": 1,
+            "n": 1650
+          },
+          {
+            "dataset": "proprio",
+            "y": 0,
+            "n": 18599
+          },
+          {
+            "dataset": "proprio",
+            "y": 1,
+            "n": 18609
+          },
+          {
+            "dataset": "srbh",
+            "y": 0,
+            "n": 51034
+          },
+          {
+            "dataset": "srbh",
+            "y": 1,
+            "n": 53290
+          }
+        ],
+        "validation": [
+          {
+            "dataset": "artificial_sqli",
+            "y": 0,
+            "n": 2322
+          },
+          {
+            "dataset": "artificial_sqli",
+            "y": 1,
+            "n": 2468
+          }
+        ],
+        "test": [
+          {
+            "dataset": "site_sqli",
+            "y": 0,
+            "n": 4561
+          },
+          {
+            "dataset": "site_sqli",
+            "y": 1,
+            "n": 4561
+          }
+        ]
+      }
+    },
+    "removed_source": null,
+    "validation_frozen": true,
+    "dedup_ownership": "sorted dataset,row_number before any removal"
+  },
+  "counts": [
+    {
+      "split": "test",
+      "dataset": "site_sqli",
+      "y": 0,
+      "n": 910
+    },
+    {
+      "split": "test",
+      "dataset": "site_sqli",
+      "y": 1,
+      "n": 912
+    },
+    {
+      "split": "train",
+      "dataset": "site_sqli",
+      "y": 0,
+      "n": 2744
+    },
+    {
+      "split": "train",
+      "dataset": "site_sqli",
+      "y": 1,
+      "n": 2679
+    },
+    {
+      "split": "validation",
+      "dataset": "site_sqli",
+      "y": 0,
+      "n": 907
+    },
+    {
+      "split": "validation",
+      "dataset": "site_sqli",
+      "y": 1,
+      "n": 901
+    }
+  ]
+}

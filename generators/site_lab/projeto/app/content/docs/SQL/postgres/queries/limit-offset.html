@@ -1,0 +1,6 @@
+<h1>LIMIT and OFFSET</h1>
+<p><code>LIMIT</code> restricts row count and <code>OFFSET</code> skips rows. Always pair pagination with a deterministic <code>ORDER BY</code>.</p>
+<pre><code>SELECT order_id, created_at
+FROM orders
+ORDER BY created_at DESC, order_id DESC
+OFFSET 20 LIMIT 20;</code></pre>

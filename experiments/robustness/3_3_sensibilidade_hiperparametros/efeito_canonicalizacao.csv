@@ -1,0 +1,7 @@
+config_id,model,delta_CAN_minus_RAW_mean,targets_CAN_improved,n_targets
+catboost_100_d4,catboost,0.0844189674882353,7,7
+catboost_400_d6,catboost,0.11141032536633046,7,7
+logistic_C0.1,logistic,0.11288154704989851,7,7
+logistic_C10,logistic,0.12761922269557854,7,7
+mlp_128_64,mlp,0.07197971056835277,7,7
+mlp_32,mlp,0.061051780204134966,6,7

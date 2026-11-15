@@ -1,0 +1,5 @@
+<h1>COALESCE</h1>
+<p><code>COALESCE</code> returns the first argument that is not NULL, making it useful for defaults in query output.</p>
+<pre><code>SELECT customer_id,
+       coalesce(phone, mobile_phone, 'not supplied') AS contact
+FROM customers;</code></pre>

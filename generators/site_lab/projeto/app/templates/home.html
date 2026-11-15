@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home | SQL Reference Forum{% endblock %}
+
+{% block content %}
+  <section class="docs-page" aria-labelledby="home-heading">
+    <h1 id="home-heading">SQL Reference Forum</h1>
+    <p>Explore reference material and discuss database topics with the community.</p>
+    <ul class="docs-list">
+      <li class="docs-list-item">
+        <a href="{{ url_for('pages.docs_list') }}">Docs</a>
+        <p>Read the original SQL reference documentation.</p>
+      </li>
+      <li class="docs-list-item">
+        <a href="/docs/SQL/postgres/">SQL / PostgreSQL Docs</a>
+        <p>Browse the PostgreSQL documentation tree and search its content.</p>
+      </li>
+      <li class="docs-list-item">
+        <a href="{{ url_for('pages.forum') }}">Forum</a>
+        <p>Ask questions and read answers from the community.</p>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

@@ -1,0 +1,8 @@
+<h1>CREATE SCHEMA</h1>
+<p><code>CREATE SCHEMA</code> creates a namespace for database objects. Schemas organize tables, views, functions, and types within one database.</p>
+<pre><code>CREATE SCHEMA reporting;
+CREATE TABLE reporting.daily_sales (
+  sale_date date PRIMARY KEY,
+  revenue numeric(12, 2) NOT NULL
+);</code></pre>
+<p>Use qualified names such as <code>reporting.daily_sales</code> when the search path should not choose the schema implicitly.</p>

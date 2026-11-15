@@ -1,0 +1,11 @@
+<h1>WITH and Common Table Expressions</h1>
+<p>A <code>WITH</code> clause defines one or more named common table expressions (CTEs) for a following <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>, or <code>MERGE</code> command.</p>
+<pre><code>WITH recent_orders AS (
+  SELECT customer_id, total
+  FROM orders
+  WHERE created_at &gt;= current_date - interval '30 days'
+)
+SELECT customer_id, sum(total) AS monthly_total
+FROM recent_orders
+GROUP BY customer_id;</code></pre>
+<p>Add <code>RECURSIVE</code> for hierarchical traversal. Data-modifying CTEs can pass rows between commands by using <code>RETURNING</code>.</p>

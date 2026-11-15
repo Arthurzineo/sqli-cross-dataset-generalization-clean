@@ -1,0 +1,131 @@
+{
+  "split_id": "136b2abfebbca26fb7f2a6a0d8365be274d701f22b9d73a7bc86599e2a4a9a23",
+  "cache_id": "9161607ac6987977403b1dc44be707e0b38c58ba070c286fe7ccd68a5479c2e4",
+  "split_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/splits/136b2abfebbca26fb7f2a6a0d8365be274d701f22b9d73a7bc86599e2a4a9a23.parquet",
+  "sha256": "b9dc8bb737b4bd765aa9b424df4e6ca28b43cbf4044ae185b0f485f4a973f5f9",
+  "audit": {
+    "id_label_conflicts_removed": {},
+    "id_not_applicable": null,
+    "ood_audit": {
+      "mode": "lodo",
+      "target": "site_cooking",
+      "seed": 1337,
+      "cap_per_dataset_class": 0,
+      "same_family_removed": {
+        "site_sqli": 9122
+      },
+      "target_overlap_removed": {},
+      "development_label_conflicts_removed": {},
+      "train_validation_overlap_removed": {},
+      "counts": {
+        "train": [
+          {
+            "dataset": "artificial_sqli",
+            "y": 0,
+            "n": 2322
+          },
+          {
+            "dataset": "artificial_sqli",
+            "y": 1,
+            "n": 2468
+          },
+          {
+            "dataset": "csic",
+            "y": 0,
+            "n": 1177
+          },
+          {
+            "dataset": "csic",
+            "y": 1,
+            "n": 1177
+          },
+          {
+            "dataset": "ecml",
+            "y": 0,
+            "n": 1650
+          },
+          {
+            "dataset": "ecml",
+            "y": 1,
+            "n": 1650
+          },
+          {
+            "dataset": "proprio",
+            "y": 0,
+            "n": 18599
+          },
+          {
+            "dataset": "proprio",
+            "y": 1,
+            "n": 18609
+          }
+        ],
+        "validation": [
+          {
+            "dataset": "srbh",
+            "y": 0,
+            "n": 51034
+          },
+          {
+            "dataset": "srbh",
+            "y": 1,
+            "n": 53290
+          }
+        ],
+        "test": [
+          {
+            "dataset": "site_cooking",
+            "y": 0,
+            "n": 3667
+          },
+          {
+            "dataset": "site_cooking",
+            "y": 1,
+            "n": 3667
+          }
+        ]
+      }
+    },
+    "removed_source": null,
+    "validation_frozen": true,
+    "dedup_ownership": "sorted dataset,row_number before any removal"
+  },
+  "counts": [
+    {
+      "split": "test",
+      "dataset": "site_cooking",
+      "y": 0,
+      "n": 734
+    },
+    {
+      "split": "test",
+      "dataset": "site_cooking",
+      "y": 1,
+      "n": 737
+    },
+    {
+      "split": "train",
+      "dataset": "site_cooking",
+      "y": 0,
+      "n": 2218
+    },
+    {
+      "split": "train",
+      "dataset": "site_cooking",
+      "y": 1,
+      "n": 2145
+    },
+    {
+      "split": "validation",
+      "dataset": "site_cooking",
+      "y": 0,
+      "n": 715
+    },
+    {
+      "split": "validation",
+      "dataset": "site_cooking",
+      "y": 1,
+      "n": 740
+    }
+  ]
+}

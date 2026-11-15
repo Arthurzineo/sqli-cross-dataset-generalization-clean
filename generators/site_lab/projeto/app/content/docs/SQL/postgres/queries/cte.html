@@ -1,0 +1,8 @@
+<h1>Common Table Expressions</h1>
+<p>A common table expression gives a name to a query result for the following statement.</p>
+<pre><code>WITH paid_orders AS (
+  SELECT customer_id, total FROM orders WHERE status = 'paid'
+)
+SELECT customer_id, sum(total)
+FROM paid_orders
+GROUP BY customer_id;</code></pre>

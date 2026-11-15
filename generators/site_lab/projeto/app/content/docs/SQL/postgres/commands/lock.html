@@ -1,0 +1,6 @@
+<h1>LOCK</h1>
+<p><code>LOCK</code> explicitly acquires a table-level lock for the remainder of a transaction. PostgreSQL normally acquires suitable locks automatically.</p>
+<pre><code>BEGIN;
+LOCK TABLE inventory IN SHARE ROW EXCLUSIVE MODE;
+UPDATE inventory SET quantity = quantity - 1 WHERE sku = 'book-001';
+COMMIT;</code></pre>

@@ -1,0 +1,38 @@
+ENTREGA - Clusterizacao Nao Supervisionada de Ataques Web (CSIC 2010)
+=====================================================================
+
+ARQUIVOS EXIGIDOS PELA DISCIPLINA:
+
+1) DATASET
+   - DATASET_FINAL_clusters_puros.csv   -> dataset final derivado (2.954 amostras
+                                            de SQLi e XSS, dos clusters 100% puros)
+   - csic_database_reduzido.csv         -> dataset ORIGINAL de entrada (CSIC 2010)
+
+2) CODIGO PYTHON (duas formas, use a que o professor preferir)
+   - Clusterizacao_Completo.ipynb       -> notebook Jupyter com todas as etapas
+   - clusterizacao_ataques_web.py       -> mesmo conteudo como script .py
+
+3) PDF EXPLICATIVO
+   - Relatorio_Clusterizacao.pdf        -> explicacao geral e interpretacao de
+                                            cada etapa (11 paginas)
+
+ARQUIVO DE APOIO:
+   - csic_embeddings_codebert.csv       -> embeddings CodeBERT (entrada do Branch A);
+                                            necessario para o codigo rodar sem gerar
+                                            os embeddings do zero.
+
+ETAPAS COBERTAS (todas exigidas pela disciplina):
+   [x] Analise Exploratoria dos Dados
+   [x] Preparacao dos Dados
+   [x] K-Means (agrupamento particionado)
+   [x] DBSCAN, Mean-Shift e Agglomerative Clustering
+   [x] PCA (reducao de dimensionalidade)
+   [x] Interpretacao dos Resultados
+
+COMO RODAR O CODIGO:
+   pip install pandas numpy scikit-learn matplotlib jupyter
+   (opcional: pip install umap-learn hdbscan   -> para os testes extras)
+   Manter os CSVs na mesma pasta e executar o notebook ou o script.
+
+NOTA: a avaliacao de qualidade e pureza dos clusters foi apoiada pelo
+modelo de linguagem Claude Opus 4.8 (ver secao 8.2 do relatorio).

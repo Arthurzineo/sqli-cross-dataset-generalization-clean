@@ -1,0 +1,11 @@
+# Exemplo de caminhos/endpoints para fuzzing. Copie para paths.txt.
+admin
+login
+logout
+api
+api/v1
+config
+backup
+uploads
+.git
+robots.txt

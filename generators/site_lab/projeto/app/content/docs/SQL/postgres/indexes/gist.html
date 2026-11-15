@@ -1,0 +1,5 @@
+<h1>GiST Indexes</h1>
+<p>GiST is a balanced search framework used by data types and extensions for geometric, range, and nearest-neighbor operations.</p>
+<pre><code>CREATE INDEX bookings_period_gist_idx
+ON bookings USING gist (reserved_period);
+SELECT * FROM bookings WHERE reserved_period &amp;&amp; daterange('2026-01-01', '2026-02-01');</code></pre>

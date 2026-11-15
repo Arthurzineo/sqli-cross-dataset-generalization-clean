@@ -1,0 +1,18 @@
+target,token,component,likely_boilerplate,request_frequency,sources,rank_within_target
+artificial_sqli,body:-=,body,True,2462,proprio;srbh,1
+artificial_sqli,query:offset=000,query,True,22,proprio,2
+artificial_sqli,query:offset=00,query,True,6,proprio,3
+artificial_sqli,query:q=admin',query,False,2,site_cooking;site_sqli,4
+artificial_sqli,"query:q="") or pg_sleep(0)--",query,False,1,site_sqli,5
+artificial_sqli,query:q=') or pg_sleep(0)--,query,False,1,site_sqli,6
+artificial_sqli,query:q=and sleep(0),query,False,1,site_cooking,7
+proprio,body:-=,body,True,29989,artificial_sqli;srbh,1
+proprio,query:sleep(0)=,query,True,10,site_cooking;site_sqli,2
+proprio,"query:""""/*=",query,True,4,site_cooking;site_sqli,3
+proprio,query:''=,query,True,3,site_cooking;site_sqli,4
+proprio,"query:""""/*)))=",query,True,2,site_cooking,5
+proprio,"query:""""=",query,True,2,site_cooking,6
+proprio,"query:""=",query,True,2,site_sqli,7
+proprio,query:')))=,query,True,2,site_sqli,8
+proprio,body:comment=,body,True,1,srbh,9
+proprio,query:''/*))=,query,True,1,site_sqli,10

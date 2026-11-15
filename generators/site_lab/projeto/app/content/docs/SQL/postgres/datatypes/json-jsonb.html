@@ -1,0 +1,5 @@
+<h1>JSON and JSONB</h1>
+<p><code>json</code> preserves input text, while <code>jsonb</code> stores a decomposed binary form optimized for querying and indexing.</p>
+<pre><code>CREATE TABLE events (payload jsonb NOT NULL);
+SELECT payload -&gt;&gt; 'type' FROM events
+WHERE payload @&gt; '{"priority": true}';</code></pre>

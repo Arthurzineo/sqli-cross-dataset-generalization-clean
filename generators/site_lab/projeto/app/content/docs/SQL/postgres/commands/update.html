@@ -1,0 +1,13 @@
+<h1>UPDATE</h1>
+<p><code>UPDATE</code> changes existing rows. A <code>WHERE</code> clause identifies which rows change; without it, every row in the target table is updated.</p>
+<pre><code>UPDATE orders
+SET status = 'shipped',
+    shipped_at = now()
+WHERE order_id = 42
+RETURNING order_id, status, shipped_at;</code></pre>
+<p>An <code>UPDATE ... FROM</code> statement can use another relation while calculating new values.</p>
+<pre><code>UPDATE products AS p
+SET price = p.price * d.multiplier
+FROM discounts AS d
+WHERE d.category_id = p.category_id
+  AND d.active = true;</code></pre>

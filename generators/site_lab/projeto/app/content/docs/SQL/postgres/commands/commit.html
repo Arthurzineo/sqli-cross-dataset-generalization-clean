@@ -1,0 +1,5 @@
+<h1>COMMIT</h1>
+<p><code>COMMIT</code> makes the changes made in the current transaction durable and visible to other transactions.</p>
+<pre><code>BEGIN;
+INSERT INTO audit_log (event) VALUES ('import complete');
+COMMIT;</code></pre>

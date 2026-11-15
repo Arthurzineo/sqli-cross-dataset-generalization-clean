@@ -1,0 +1,7 @@
+model,representation,f1_macro_target,article_rounded,rounded_matches_article
+catboost,CANONICALIZED,0.893632509108083,0.894,True
+catboost,RAW,0.7839268651129446,0.784,True
+logistic,CANONICALIZED,0.8441052584761118,0.844,True
+logistic,RAW,0.7330001867257102,0.733,True
+mlp,CANONICALIZED,0.8669723656268024,0.867,True
+mlp,RAW,0.8097300769182831,0.81,True

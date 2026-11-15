@@ -1,0 +1,5 @@
+<h1>ROLLBACK</h1>
+<p><code>ROLLBACK</code> abandons changes made since <code>BEGIN</code> when a transaction cannot be completed safely.</p>
+<pre><code>BEGIN;
+DELETE FROM staging_rows WHERE imported = false;
+ROLLBACK;</code></pre>

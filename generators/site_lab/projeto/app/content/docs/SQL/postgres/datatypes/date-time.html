@@ -1,0 +1,6 @@
+<h1>Date and Time Types</h1>
+<p>Use <code>date</code>, <code>time</code>, <code>timestamp</code>, and <code>timestamptz</code> to model temporal values. Timestamps with time zone are suitable for global event times.</p>
+<pre><code>CREATE TABLE events (
+  event_id bigint GENERATED ALWAYS AS IDENTITY,
+  occurred_at timestamptz NOT NULL DEFAULT now()
+);</code></pre>

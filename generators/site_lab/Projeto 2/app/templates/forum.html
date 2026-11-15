@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Community kitchen | The Curious Kitchen Wiki{% endblock %}
+
+{% block content %}
+  <section class="forum-page" aria-labelledby="forum-heading">
+    <h1 id="forum-heading">Community kitchen</h1>
+
+    <form id="new-post-form" class="new-post-form" action="/api/posts" method="post">
+      <h2>Ask a cooking question</h2>
+      <label for="new-post-author">Your name</label>
+      <input id="new-post-author" name="author" type="text" placeholder="Your name">
+      <label for="new-post-title">Title</label>
+      <input id="new-post-title" name="title" type="text">
+      <label for="new-post-body">Question</label>
+      <textarea id="new-post-body" name="body" rows="5"></textarea>
+      <label for="new-post-tags">Tags (comma separated)</label>
+      <input id="new-post-tags" name="tags" type="text">
+      <button type="submit">Ask</button>
+      <p id="new-post-status" class="new-post-status" aria-live="polite"></p>
+    </form>
+
+    <form id="post-search-form" class="post-search" action="/api/posts/search" method="get">
+      <label for="post-search-input">Search cooking discussions</label>
+      <input id="post-search-input" name="q" type="search" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+
+    <section class="post-browse-controls" aria-label="Browse posts">
+      <label for="post-sort">Sort</label>
+      <select id="post-sort" name="sort">
+        <option value="recent">Recent</option>
+        <option value="title">Title</option>
+        <option value="id">ID</option>
+      </select>
+      <div id="post-tags" class="post-tags" aria-label="Filter by tag"></div>
+      <button id="post-prev" type="button" disabled>Previous</button>
+      <span id="post-page" aria-live="polite">Page 1</span>
+      <button id="post-next" type="button">Next</button>
+    </section>
+
+    <div class="forum-layout">
+      <section class="post-list-panel" aria-labelledby="posts-heading">
+        <h2 id="posts-heading">Cooking discussions</h2>
+        <div id="post-list" class="post-list">
+          {% for post in posts %}
+            <article class="post-item" data-post-id="{{ post['id'] }}">
+              <h3>
+                <button class="post-open" type="button" data-post-id="{{ post['id'] }}">
+                  {{ post['title'] }}
+                </button>
+              </h3>
+              <p>{{ post['body'] }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <aside class="post-detail-panel" aria-live="polite">
+        <div id="post-detail" class="post-detail">
+          <p>Select a post to view its details.</p>
+        </div>
+
+        <section id="post-comments" class="post-comments" aria-live="polite">
+          <h2>Answers</h2>
+          <p>No answers yet.</p>
+        </section>
+
+        <form id="comment-form" class="comment-form" action="/api/comments" method="post">
+          <h2>Leave a comment</h2>
+          <input id="comment-post-id" name="post_id" type="hidden">
+          <label for="comment-author">Your name</label>
+          <input id="comment-author" name="author" type="text" placeholder="Your name">
+          <label for="comment-body">Comment</label>
+          <textarea id="comment-body" name="body" rows="5"></textarea>
+          <button type="submit">Post comment</button>
+          <p id="comment-status" class="comment-status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </div>
+  </section>
+{% endblock %}

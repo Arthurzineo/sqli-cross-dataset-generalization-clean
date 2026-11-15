@@ -1,0 +1,9 @@
+<h1>WHERE</h1>
+<p><code>WHERE</code> filters rows before grouping. Conditions may use comparisons, boolean logic, ranges, pattern matching, and subqueries.</p>
+<pre><code>SELECT order_id, total
+FROM orders
+WHERE status = 'paid'
+  AND total &gt; 100
+  AND created_at &gt;= current_date - interval '30 days'
+  AND customer_id IN (SELECT customer_id FROM vip_customers);</code></pre>
+<p>Parentheses make <code>AND</code> and <code>OR</code> grouping clear. Bind application values as query parameters rather than concatenating them into SQL.</p>

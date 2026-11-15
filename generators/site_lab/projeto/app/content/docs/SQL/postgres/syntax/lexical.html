@@ -1,0 +1,6 @@
+<h1>Lexical Structure</h1>
+<p>PostgreSQL SQL input is composed of tokens such as identifiers, keywords, constants, operators, and punctuation. Whitespace separates tokens where required and is otherwise insignificant.</p>
+<pre><code>SELECT customer_id, total
+FROM invoices
+WHERE total &gt; 100;</code></pre>
+<p>Keywords such as <code>SELECT</code>, <code>FROM</code>, and <code>WHERE</code> are normally case-insensitive. Quoted identifiers and string constants have different lexical rules.</p>

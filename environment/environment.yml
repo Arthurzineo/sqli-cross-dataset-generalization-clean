@@ -1,0 +1,8 @@
+name: sqli-generalization-paper
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt
+

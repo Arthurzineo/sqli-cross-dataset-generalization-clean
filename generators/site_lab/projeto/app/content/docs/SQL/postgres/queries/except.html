@@ -1,0 +1,5 @@
+<h1>EXCEPT</h1>
+<p><code>EXCEPT</code> returns rows from the first result set that are absent from the second.</p>
+<pre><code>SELECT customer_id FROM customers
+EXCEPT
+SELECT customer_id FROM blocked_customers;</code></pre>

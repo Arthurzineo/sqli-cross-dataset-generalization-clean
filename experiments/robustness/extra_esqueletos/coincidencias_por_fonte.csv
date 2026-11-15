@@ -1,0 +1,13 @@
+target,source,n_target,n_requests_with_match,fraction
+proprio,artificial_sqli,37232,29989,0.8054630425440481
+proprio,csic,37232,0,0.0
+proprio,ecml,37232,0,0.0
+proprio,site_cooking,37232,23,0.0006177481736140954
+proprio,site_sqli,37232,25,0.0006714654061022776
+proprio,srbh,37232,29990,0.8054899011602922
+artificial_sqli,csic,5000,0,0.0
+artificial_sqli,ecml,5000,0,0.0
+artificial_sqli,proprio,5000,2462,0.4924
+artificial_sqli,site_cooking,5000,3,0.0006
+artificial_sqli,site_sqli,5000,4,0.0008
+artificial_sqli,srbh,5000,2462,0.4924

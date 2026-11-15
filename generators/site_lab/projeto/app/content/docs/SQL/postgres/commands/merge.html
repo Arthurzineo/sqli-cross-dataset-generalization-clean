@@ -1,0 +1,10 @@
+<h1>MERGE</h1>
+<p><code>MERGE</code> compares a source relation with a target relation and performs conditional <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> actions in one command.</p>
+<pre><code>MERGE INTO inventory AS target
+USING incoming_stock AS source
+ON target.sku = source.sku
+WHEN MATCHED THEN
+  UPDATE SET quantity = target.quantity + source.quantity
+WHEN NOT MATCHED THEN
+  INSERT (sku, quantity) VALUES (source.sku, source.quantity);</code></pre>
+<p>The join condition should identify the intended target row. Each source row can trigger at most one <code>WHEN</code> action.</p>

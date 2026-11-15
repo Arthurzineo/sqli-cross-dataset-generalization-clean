@@ -1,0 +1,5 @@
+<h1>String Functions</h1>
+<p>PostgreSQL provides functions for concatenation, length, case conversion, trimming, replacement, and substring extraction.</p>
+<pre><code>SELECT lower(email), trim(name), substring(code FROM 1 FOR 3)
+FROM customers;
+SELECT concat_ws(' ', first_name, last_name);</code></pre>

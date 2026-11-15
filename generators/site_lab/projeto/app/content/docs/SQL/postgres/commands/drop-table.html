@@ -1,0 +1,4 @@
+<h1>DROP TABLE</h1>
+<p><code>DROP TABLE</code> removes a table definition and its data. PostgreSQL rejects the operation when dependent objects exist unless <code>CASCADE</code> is specified.</p>
+<pre><code>DROP TABLE IF EXISTS import_staging;</code></pre>
+<p>Use <code>CASCADE</code> only after understanding every dependent object that will also be removed.</p>

@@ -1,0 +1,6 @@
+<h1>LEFT JOIN</h1>
+<p><code>LEFT JOIN</code> keeps every row from the left relation and fills right-side columns with NULL when no match exists.</p>
+<pre><code>SELECT c.name, count(o.order_id)
+FROM customers AS c
+LEFT JOIN orders AS o ON o.customer_id = c.customer_id
+GROUP BY c.name;</code></pre>

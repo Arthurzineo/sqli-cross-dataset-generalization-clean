@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}PostgreSQL SQL documentation{% endblock %}
+
+{% block content %}
+  <section id="docs-app" class="docs-app-shell" data-path="{{ initial_path }}" aria-live="polite">
+    <p>Loading PostgreSQL documentation...</p>
+  </section>
+  <script defer src="{{ url_for('static', filename='js/vendor/react.production.min.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/vendor/react-dom.production.min.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/vendor/htm.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/docs-app.js') }}"></script>
+{% endblock %}

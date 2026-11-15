@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}SQL Reference Forum{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/auth.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-brand" href="{{ url_for('pages.home') }}">SQL Reference Forum</a>
+        <a href="{{ url_for('pages.docs_list') }}">Docs</a>
+        <a href="{{ url_for('pages.forum') }}">Forum</a>
+      </nav>
+    </header>
+    <main class="site-main">
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

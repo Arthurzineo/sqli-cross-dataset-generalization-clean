@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Mock de sqlmap para testes locais SEM rede. Apenas registra argumentos e sai.
+# Não abre sockets. Use PATH="tests/mocks:$PATH" nos testes.
+printf '%s ' "MOCK sqlmap called with:" "$@" >> "${MOCK_LOG:-/tmp/mock-sqlmap.log}"
+printf '\n' >> "${MOCK_LOG:-/tmp/mock-sqlmap.log}"
+case " $* " in
+  *" --version "*) echo "sqlmap/mock (dev)"; ;;
+  *" --list-tampers "*) echo "space2comment"; echo "charencode"; ;;
+esac
+exit "${MOCK_EXIT:-0}"

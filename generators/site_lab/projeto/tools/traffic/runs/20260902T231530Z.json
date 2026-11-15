@@ -1,0 +1,217 @@
+{
+  "label": "benign",
+  "started_at": "2026-09-02T23:15:30.308860+00:00",
+  "base_url": "https://localhost:8443",
+  "content_service": "http://127.0.0.1:8765",
+  "sessions": 6,
+  "concurrency": 3,
+  "actions": [
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/functions"
+    },
+    {
+      "session": 3,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/datatypes"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/queries"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/functions/sleep"
+    },
+    {
+      "session": 2,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/datatypes/numeric"
+    },
+    {
+      "session": 3,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/queries/having"
+    },
+    {
+      "session": 1,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 5,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/performance"
+    },
+    {
+      "session": 5,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/performance/explain"
+    },
+    {
+      "session": 5,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/docs/sql/search?q=<generated>"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/posts?tag=sql&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/api/docs/sql/search?q=<generated>"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 6,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/syntax"
+    },
+    {
+      "session": 6,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/syntax/string-constants"
+    },
+    {
+      "session": 6,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 5,
+      "method": "POST",
+      "url": "/graphql"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-09-02T23:17:31.213827+00:00"
+}

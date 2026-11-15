@@ -1,0 +1,20 @@
+<h1>SELECT</h1>
+<p><code>SELECT</code> reads rows and expressions from one or more sources. A query can project columns, join relations, filter rows, group results, sort output, and limit the result set.</p>
+<pre><code>SELECT c.customer_id,
+       c.name,
+       sum(o.total) AS lifetime_value
+FROM customers AS c
+JOIN orders AS o ON o.customer_id = c.customer_id
+WHERE o.status = 'paid'
+  AND o.created_at &gt;= date_trunc('year', current_date)
+GROUP BY c.customer_id, c.name
+HAVING sum(o.total) &gt; 1000
+ORDER BY lifetime_value DESC
+LIMIT 20;</code></pre>
+<p>The <code>FROM</code> clause identifies sources, <code>WHERE</code> applies row-level conditions, and <code>GROUP BY</code> creates groups for aggregate functions. Use parameter binding in application code for values such as dates, status, and limits.</p>
+<pre><code>SELECT id, email
+FROM accounts
+WHERE email ILIKE $1
+ORDER BY id
+OFFSET $2 LIMIT $3;</code></pre>
+<p>A <code>SELECT</code> query can also use <code>DISTINCT</code>, subqueries, common table expressions, window functions, and set operations such as <code>UNION</code>.</p>

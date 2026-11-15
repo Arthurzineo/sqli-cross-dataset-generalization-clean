@@ -1,0 +1,7 @@
+<h1>CASE Expressions</h1>
+<p><code>CASE</code> selects a result based on ordered conditions, similar to conditional logic in other languages.</p>
+<pre><code>SELECT order_id,
+       CASE WHEN total &gt;= 1000 THEN 'large'
+            WHEN total &gt;= 100 THEN 'medium'
+            ELSE 'small' END AS order_size
+FROM orders;</code></pre>

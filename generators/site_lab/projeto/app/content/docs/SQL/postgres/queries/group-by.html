@@ -1,0 +1,5 @@
+<h1>GROUP BY</h1>
+<p><code>GROUP BY</code> partitions rows into groups so aggregate functions can calculate one result per group.</p>
+<pre><code>SELECT status, count(*) AS order_count, sum(total) AS revenue
+FROM orders
+GROUP BY status;</code></pre>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} | PostgreSQL SQL documentation{% endblock %}
+
+{% block content %}
+  <article class="doc-page doc-sql-page" data-doc-path="{{ path }}">
+    <a class="back-link" href="{{ url_for('docs_sql.docs_sql_page', subpath='postgres/') }}">PostgreSQL SQL documentation</a>
+    <div class="doc-content">{{ content | safe }}</div>
+  </article>
+{% endblock %}

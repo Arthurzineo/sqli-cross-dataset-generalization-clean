@@ -1,0 +1,4 @@
+<h1>DROP INDEX</h1>
+<p><code>DROP INDEX</code> removes an index that is no longer required. Removing an index does not remove the table or its rows.</p>
+<pre><code>DROP INDEX IF EXISTS orders_customer_created_idx;</code></pre>
+<p><code>DROP INDEX CONCURRENTLY</code> can reduce lock impact, but it cannot run inside a transaction block.</p>

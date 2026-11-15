@@ -1,0 +1,4 @@
+<h1>Type Casts</h1>
+<p>A cast converts a value to another compatible PostgreSQL type. The compact <code>::</code> notation is equivalent to <code>CAST(... AS ...)</code>.</p>
+<pre><code>SELECT '42'::integer, CAST('2026-09-01' AS date);
+SELECT total::numeric(12, 2) FROM orders;</code></pre>

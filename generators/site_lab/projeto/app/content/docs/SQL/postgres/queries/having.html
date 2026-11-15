@@ -1,0 +1,7 @@
+<h1>HAVING</h1>
+<p><code>HAVING</code> filters groups after aggregation, while <code>WHERE</code> filters individual input rows before grouping.</p>
+<pre><code>SELECT customer_id, sum(total) AS spend
+FROM orders
+WHERE status = 'paid'
+GROUP BY customer_id
+HAVING sum(total) &gt; 1000;</code></pre>

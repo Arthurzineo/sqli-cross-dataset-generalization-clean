@@ -1,0 +1,20 @@
+# =============================================================================
+# scope.txt.example — copie para scope.txt e liste APENAS hosts autorizados.
+#   cp config/scope.txt.example config/scope.txt
+# Uma entrada por linha. Linhas vazias e iniciadas por # são ignoradas.
+#
+# Aceito:
+#   - hostname exato ............ app.lab.local
+#   - hostname com porta ........ api.lab.local:8443
+#   - IPv4 exato ................ 10.10.20.15
+#   - CIDR IPv4 ................. 10.10.30.0/24
+#   - subdomínio wildcard ....... *.sqli.lab.local   (somente se intencional)
+#
+# Rejeitado (curingas amplos demais):
+#   *            *.com          0.0.0.0/0        http://app.lab.local/path
+# =============================================================================
+
+app.lab.local
+api.lab.local:8443
+10.10.20.15
+10.10.30.0/24

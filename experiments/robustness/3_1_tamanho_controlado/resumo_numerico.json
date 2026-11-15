@@ -1,0 +1,19 @@
+{
+  "controlled_remove_increased_f1_mean": 11,
+  "controlled_remove_increased_f1_seed": 70,
+  "controlled_remove_reduced_f1_mean": 29,
+  "controlled_remove_reduced_f1_seed": 94,
+  "n_pairs_seed": 164,
+  "n_pairs_target_source": 40,
+  "original_remove_increased_f1_mean": 11,
+  "original_remove_increased_f1_seed": 62,
+  "original_remove_reduced_f1_mean": 29,
+  "original_remove_reduced_f1_seed": 102,
+  "sign_changes_seed": 74,
+  "sign_changes_target_source_mean": 14,
+  "spearman_seed": 0.2400854270673214,
+  "spearman_seed_p": 0.0019582287029547177,
+  "spearman_target_source_mean": 0.476735459662289,
+  "spearman_target_source_mean_p": 0.0018705579277659198,
+  "wall_seconds_this_invocation": 73.18385860200215
+}

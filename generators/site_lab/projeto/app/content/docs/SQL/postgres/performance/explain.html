@@ -1,0 +1,6 @@
+<h1>EXPLAIN</h1>
+<p><code>EXPLAIN</code> shows the execution plan chosen by PostgreSQL. <code>EXPLAIN ANALYZE</code> runs the query and includes actual timing and row counts.</p>
+<pre><code>EXPLAIN ANALYZE
+SELECT * FROM orders
+WHERE customer_id = 42
+ORDER BY created_at DESC;</code></pre>

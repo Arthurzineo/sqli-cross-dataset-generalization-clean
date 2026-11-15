@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Se você utilizar este código ou os resultados, cite o artigo associado."
+title: "O que faz um detector de injeção de SQL generalizar?"
+type: software
+authors:
+  - family-names: "Gonçalves"
+    given-names: "Arthur"
+repository-code: "PENDENTE"
+license: "PENDENTE"
+

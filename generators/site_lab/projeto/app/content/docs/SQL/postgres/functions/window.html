@@ -1,0 +1,6 @@
+<h1>Window Functions</h1>
+<p>Window functions calculate across related rows while keeping one output row for each input row.</p>
+<pre><code>SELECT customer_id, created_at, total,
+       row_number() OVER (PARTITION BY customer_id ORDER BY created_at) AS purchase_number,
+       sum(total) OVER (PARTITION BY customer_id) AS customer_total
+FROM orders;</code></pre>

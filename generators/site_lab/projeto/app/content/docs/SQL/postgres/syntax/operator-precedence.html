@@ -1,0 +1,7 @@
+<h1>Operator Precedence</h1>
+<p>PostgreSQL evaluates operators according to precedence rules. Parentheses make the intended grouping explicit and should be used when arithmetic, comparison, and boolean operators are combined.</p>
+<pre><code>SELECT (subtotal + tax) * quantity AS amount
+FROM invoice_lines
+WHERE (paid = false OR due_date &lt; current_date)
+  AND cancelled = false;</code></pre>
+<p>In particular, <code>NOT</code>, <code>AND</code>, and <code>OR</code> do not have equal precedence. Parentheses prevent an ambiguous <code>WHERE</code> condition from changing its meaning.</p>

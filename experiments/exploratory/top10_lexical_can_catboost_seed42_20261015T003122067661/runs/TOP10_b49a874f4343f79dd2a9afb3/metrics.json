@@ -1,0 +1,236 @@
+{
+  "threshold_source": 0.11263238117841816,
+  "metrics_validation": {
+    "threshold": 0.11263238117841816,
+    "precision": 0.8818613056245764,
+    "recall": 0.9721115537848606,
+    "f1": 0.9247897666706147,
+    "macro_f1": 0.9217730819023493,
+    "balanced_accuracy": 0.9224846087874102,
+    "specificity": 0.8728576637899599,
+    "mcc": 0.8482838447279197,
+    "pr_auc": 0.964930348784117,
+    "roc_auc": 0.9589167412639463,
+    "brier": 0.07504218580345003,
+    "ece_10": 0.058195473646255255,
+    "fpr": 0.12714233621004012,
+    "fnr": 0.027888446215139442,
+    "tn": 7181,
+    "fp": 1046,
+    "fn": 224,
+    "tp": 7808,
+    "n": 16259,
+    "n_attack": 8032
+  },
+  "metrics_common": {
+    "threshold": 0.11263238117841816,
+    "precision": 0.5748792270531401,
+    "recall": 0.9754098360655737,
+    "f1": 0.723404255319149,
+    "macro_f1": 0.5412795924483069,
+    "balanced_accuracy": 0.6000397197949014,
+    "specificity": 0.22466960352422907,
+    "mcc": 0.30652980269392965,
+    "pr_auc": 0.9658567611567387,
+    "roc_auc": 0.9467574203798658,
+    "brier": 0.12373947109424245,
+    "ece_10": 0.2022854035730285,
+    "fpr": 0.775330396475771,
+    "fnr": 0.02459016393442623,
+    "tn": 51,
+    "fp": 176,
+    "fn": 6,
+    "tp": 238,
+    "n": 471,
+    "n_attack": 244
+  },
+  "metrics_test": {
+    "threshold": 0.11263238117841816,
+    "precision": 0.5524038461538462,
+    "recall": 0.9762107051826678,
+    "f1": 0.7055572612833896,
+    "macro_f1": 0.5223168801248099,
+    "balanced_accuracy": 0.592608326253186,
+    "specificity": 0.20900594732370434,
+    "mcc": 0.2887683189947008,
+    "pr_auc": 0.9531586378447459,
+    "roc_auc": 0.9308341195484972,
+    "brier": 0.13121791509924124,
+    "ece_10": 0.19938005800946618,
+    "fpr": 0.7909940526762956,
+    "fnr": 0.0237892948173322,
+    "tn": 246,
+    "fp": 931,
+    "fn": 28,
+    "tp": 1149,
+    "n": 2354,
+    "n_attack": 1177
+  },
+  "oracle_diagnostic": {
+    "threshold": 0.6128913939176938,
+    "metrics": {
+      "threshold": 0.6128913939176938,
+      "precision": 0.9511070110701108,
+      "recall": 0.8759558198810535,
+      "f1": 0.9119858469703671,
+      "macro_f1": 0.9153308883401079,
+      "balanced_accuracy": 0.9154630416312659,
+      "specificity": 0.9549702633814783,
+      "mcc": 0.8335321454642015,
+      "pr_auc": 0.9531586378447459,
+      "roc_auc": 0.9308341195484972,
+      "brier": 0.13121791509924124,
+      "ece_10": 0.19938005800946618,
+      "fpr": 0.045029736618521665,
+      "fnr": 0.12404418011894647,
+      "tn": 1124,
+      "fp": 53,
+      "fn": 146,
+      "tp": 1031,
+      "n": 2354,
+      "n_attack": 1177
+    }
+  },
+  "kind": "lodo",
+  "target": "csic",
+  "seed": 42,
+  "model": "catboost",
+  "representation": "CANONICALIZED",
+  "split_id": "3701de695121d848edbcf24fc062cd7de66fdf2901609a35a4d00474478493bf",
+  "split_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/splits/3701de695121d848edbcf24fc062cd7de66fdf2901609a35a4d00474478493bf.parquet",
+  "split_sha256": "d978bdb88e81835f06804d97db5df9afb49cc29940bd618765e0ce67bafa1cc0",
+  "cache": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/cache",
+  "config": {
+    "protocol": "paired_raw_origin_v1",
+    "output": "experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661",
+    "datasets": [
+      "proprio",
+      "csic",
+      "ecml",
+      "srbh",
+      "artificial_sqli",
+      "site_cooking",
+      "site_sqli"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026,
+      1337,
+      9001
+    ],
+    "models": [
+      "logistic",
+      "catboost",
+      "mlp"
+    ],
+    "representations": [
+      "RAW",
+      "CANONICALIZED"
+    ],
+    "threads": 2,
+    "max_address_space_gib": 12,
+    "min_available_ram_gib": 2,
+    "test_fraction": 0.2,
+    "validation_fraction": 0.2,
+    "separability_cap_per_dataset_class": 2500,
+    "separability_conditions": [
+      "all",
+      "benign",
+      "malicious"
+    ],
+    "save_checkpoints": true,
+    "model_config": {
+      "logistic": {
+        "C": 1.0,
+        "max_iter": 500
+      },
+      "catboost": {
+        "iterations": 200,
+        "depth": 5,
+        "learning_rate": 0.05,
+        "patience": 15
+      },
+      "mlp": {
+        "hidden": [
+          64,
+          32
+        ],
+        "epochs": 40,
+        "batch_size": 128,
+        "patience": 6
+      }
+    },
+    "pilot_cap": 0
+  },
+  "config_hash": "b09d61b003a32bb5c257613ee298f74af0f097d6a7b11073a6823a113b59d108",
+  "code_sha256": {
+    "<PROJECT_ROOT>/artigo/config/datasets.yaml": "3ef22e973746bee1c8cd1a30d50b72f1622fc4604bb4debb0b72b4adcd9e0f2c",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/common.py": "f8b79831def82eba0796cadce8159c5412703a956afbf83ec45e4945e7cf7c58",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/consolidate.py": "fc6fd39e6d4deef1903d05ec039b353af7622bcdd2e82ac3008693a6a64d085f",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/existing_analysis.py": "3d60bb9456f12a3aa3072757193c10b8d59af5f5e431968cafaa6fcb70942af6",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/run.py": "8c175ae79cbef978802f678ca466d8eec0fb7254f3315e2b2b24da2dbdb67397",
+    "<PROJECT_ROOT>/artigo/scripts/supplemental/test_supplemental.py": "3092c5509f92256c62b25e1da7e39332930ec1cb37568be772bb53709eedf213",
+    "<PROJECT_ROOT>/artigo/src/data/loader.py": "2c8ef0ca67be30a44d9af1a20157d55de5a82376273b3605cb2c87eca518ae4d",
+    "<PROJECT_ROOT>/artigo/src/data/splits.py": "8d46777e6e0128ed632638af0a8e9bf1d03fc5acf991a9e0339fb5d48a77e030",
+    "<PROJECT_ROOT>/artigo/src/evaluation/metrics.py": "5d0ac4534cc483316a282cfb7717b81b75882b9f6dc4cb2cf1c4257a8a3da47a",
+    "<PROJECT_ROOT>/artigo/src/features/lexical.py": "4d3fa10385ef122b21a99514e028537a7d44c80e8b23e62f35e4ef85d4ca9957",
+    "<PROJECT_ROOT>/artigo/src/models/classical.py": "1c259353aa4457608487bb3b8a6cc97932803ef451c37889070265cc84c5f7c8",
+    "<PROJECT_ROOT>/artigo/src/utils/config.py": "0034e7d07a6c8739811ee391019d7821f5276d6f2d6cb1ca6c12679caca651c2",
+    "<PROJECT_ROOT>/artigo/src/utils/provenance.py": "661d89292bdb9df11ca3ad1ec827b50e7c916d60512cddb2e1ff927f3f76edba"
+  },
+  "removed_source": null,
+  "training_sources": [
+    "artificial_sqli",
+    "ecml",
+    "proprio",
+    "srbh"
+  ],
+  "validation_sources": [
+    "site_cooking",
+    "site_sqli"
+  ],
+  "experiment_id": "TOP10_b49a874f4343f79dd2a9afb3",
+  "run_dir": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b49a874f4343f79dd2a9afb3",
+  "selected_features": [
+    "char_sq",
+    "char_rparen",
+    "char_equals",
+    "char_star",
+    "char_hash",
+    "char_colon",
+    "char_space",
+    "len_total",
+    "path_depth",
+    "ratio_nonalnum"
+  ],
+  "baseline_metrics_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/runs/SUPP_4897287be9ab2787e384cac05941/metrics.json",
+  "exploratory_note": "Exploratory retrospective ablation: fixed Top-10 from historical global LODO rankings. Feature selection is not nested per held-out target; other historical folds include that target as a source. One seed only. Baseline64 reuses saved controlled results for the same seed and exact splits. Thresholds are reselected independently on source validation after each fit.",
+  "status": "COMPLETED",
+  "finished_at": "2026-10-15T03:31:25.680840+00:00",
+  "runtime_seconds": 0.9497864809818566,
+  "training_seconds": 0.7803436730173416,
+  "inference_seconds": 0.0032619769917801023,
+  "inference_scope": "validation+test",
+  "selected_iterations": 43,
+  "rss_peak_mib": 543.1015625,
+  "hardware": {
+    "available_ram_bytes": 7106129920,
+    "cpu_count": 24,
+    "platform": "Linux-7.1.5-76070105-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "software": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "catboost": "1.2.10"
+  },
+  "git_commit": null,
+  "prediction_file": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b49a874f4343f79dd2a9afb3/predictions.parquet",
+  "train_n": 149622,
+  "validation_n": 16259,
+  "test_n": 2354,
+  "feature_importance_file": "<PROJECT_ROOT>/artigo/experimentos_exploratorios/top10_lexical_can_catboost_seed42_20261015T003122067661/runs/TOP10_b49a874f4343f79dd2a9afb3/feature_importance.parquet"
+}

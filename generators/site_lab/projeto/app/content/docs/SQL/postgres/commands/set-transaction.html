@@ -1,0 +1,6 @@
+<h1>SET TRANSACTION</h1>
+<p><code>SET TRANSACTION</code> selects characteristics for the current transaction, such as isolation level or read-only behavior.</p>
+<pre><code>BEGIN;
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY;
+SELECT count(*) FROM orders;
+COMMIT;</code></pre>

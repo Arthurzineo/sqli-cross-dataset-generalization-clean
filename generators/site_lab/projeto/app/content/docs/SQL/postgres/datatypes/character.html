@@ -1,0 +1,6 @@
+<h1>Character Types</h1>
+<p><code>text</code> stores variable-length strings without a practical length limit; <code>varchar(n)</code> enforces a maximum length.</p>
+<pre><code>CREATE TABLE contacts (
+  name text NOT NULL,
+  country_code varchar(2)
+);</code></pre>

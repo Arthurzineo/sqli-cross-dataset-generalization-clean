@@ -1,0 +1,83 @@
+{
+  "label": "benign",
+  "started_at": "2026-09-02T12:15:49.912249+00:00",
+  "base_url": "https://localhost:8443",
+  "content_service": "http://127.0.0.1:8765",
+  "sessions": 2,
+  "concurrency": 2,
+  "actions": [
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/datatypes"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/functions"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/datatypes/date-time"
+    },
+    {
+      "session": 1,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/functions/aggregate"
+    },
+    {
+      "session": 2,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/api/docs/sql/search?q=<generated>"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-09-02T12:16:09.385687+00:00"
+}

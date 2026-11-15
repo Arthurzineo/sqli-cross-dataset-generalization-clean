@@ -1,0 +1,8 @@
+seed,model,representation,filter_group,n,n_attack,f1_attack,recall,fpr
+42,catboost,CANONICALIZED,filter_1_sqli_sem_indicador,7043,7043,0.29487955453334946,0.17293766860712764,
+42,catboost,CANONICALIZED,filter_2_sqli_fora_padrao_estrito,7398,7398,0.554089709762533,0.38321167883211676,
+42,catboost,CANONICALIZED,filter_3_benigno_padrao_ataque,21561,0,,,0.30615463104679747
+42,catboost,CANONICALIZED,final_kept,106580,53290,,,
+42,catboost,CANONICALIZED,rebalance_1,7043,0,,,0.20630413176203322
+42,catboost,CANONICALIZED,rebalance_2,7398,0,,,0.19775615031089483
+42,catboost,CANONICALIZED,rebalance_final,21561,21561,0.9334157803611179,0.8751449376188488,

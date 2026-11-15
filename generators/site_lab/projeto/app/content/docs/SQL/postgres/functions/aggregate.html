@@ -1,0 +1,5 @@
+<h1>Aggregate Functions</h1>
+<p>Aggregate functions calculate one value from a set of rows, often with <code>GROUP BY</code>.</p>
+<pre><code>SELECT status, count(*), sum(total), avg(total)
+FROM orders
+GROUP BY status;</code></pre>

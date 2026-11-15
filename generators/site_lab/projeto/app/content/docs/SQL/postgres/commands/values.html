@@ -1,0 +1,10 @@
+<h1>VALUES</h1>
+<p><code>VALUES</code> constructs an inline table of rows. It can be used alone, inside a common table expression, or as the source for an <code>INSERT</code> statement.</p>
+<pre><code>VALUES
+  (1, 'open'),
+  (2, 'closed'),
+  (3, 'pending');</code></pre>
+<p>Assign names to the derived columns when a query needs to reference them.</p>
+<pre><code>SELECT status.code, status.label
+FROM (VALUES (1, 'open'), (2, 'closed'))
+     AS status(code, label);</code></pre>

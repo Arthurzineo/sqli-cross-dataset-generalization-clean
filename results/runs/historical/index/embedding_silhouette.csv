@@ -1,0 +1,2 @@
+representation,model,n,silhouette_dataset,silhouette_class,kmeans_ari_dataset,kmeans_nmi_dataset,kmeans_ari_class,kmeans_nmi_class
+decoded,codebert,20136,0.08034034073352814,0.11197484284639359,0.37453055586565775,0.4746465714011315,0.11547602718348028,0.16920444482289987

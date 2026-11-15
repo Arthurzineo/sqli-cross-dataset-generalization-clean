@@ -1,0 +1,2629 @@
+{
+  "label": "benign",
+  "started_at": "2026-09-08T23:40:13.158954+00:00",
+  "base_url": "https://localhost:8444",
+  "content_service": "http://127.0.0.1:8877",
+  "sessions": 72,
+  "concurrency": 12,
+  "actions": [
+    {
+      "session": 10,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 9,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 11,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 10,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 8,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 12,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 10,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 11,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 5,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/sleep/dough/"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 21,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 6,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 11,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 8,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 10,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/grain-salad"
+    },
+    {
+      "session": 10,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 5,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/sleep/dough/rested-cookie-dough"
+    },
+    {
+      "session": 5,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 12,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 7,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 8,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 6,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/store-herbs"
+    },
+    {
+      "session": 6,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 21,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/grain-salad"
+    },
+    {
+      "session": 1,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/seasonal-vegetable-soup"
+    },
+    {
+      "session": 3,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 7,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 7,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 11,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 16,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 12,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 22,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 8,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 21,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 12,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/store-herbs"
+    },
+    {
+      "session": 12,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 2,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 2,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 16,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 23,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 21,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/local-markets"
+    },
+    {
+      "session": 21,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 12,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 22,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 12,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 22,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 7,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 16,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/sleep/dough/"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 12,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 20,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 23,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 22,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 17,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 23,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 16,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/sleep/dough/overnight-dough"
+    },
+    {
+      "session": 16,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 3,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 33,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 7,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 16,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 12,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 2,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 22,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 7,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 18,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 23,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 22,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 17,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 33,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 32,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 13,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 12,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 2,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 33,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 23,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 17,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 33,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 18,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 28,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 19,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 18,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 17,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/store-herbs"
+    },
+    {
+      "session": 17,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 32,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 13,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 23,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 18,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 34,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 14,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 17,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 32,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 24,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 28,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 17,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 13,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 19,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 15,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 45,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 32,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 32,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 17,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 28,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 13,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 13,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 32,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 19,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 14,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 34,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 24,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 15,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/fusion-stew"
+    },
+    {
+      "session": 15,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 35,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 28,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 28,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 24,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 13,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 45,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 19,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/fusion-stew"
+    },
+    {
+      "session": 19,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 32,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 34,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 14,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 28,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 13,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 30,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 19,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 32,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 24,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 17,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 34,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 34,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 14,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/store-herbs"
+    },
+    {
+      "session": 14,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 45,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 35,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 19,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 14,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 15,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 19,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 13,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 34,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 30,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 45,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/seasonal-vegetable-soup"
+    },
+    {
+      "session": 45,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 40,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 14,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 34,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 35,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 45,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 14,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 30,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 29,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 34,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 13,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 36,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 35,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 35,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 30,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/local-markets"
+    },
+    {
+      "session": 30,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 40,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 31,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 29,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 40,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 34,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 30,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 35,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 27,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 30,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 35,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 36,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 29,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 35,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 25,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 31,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 26,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 36,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 27,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 29,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 29,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 27,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 30,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 44,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 36,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/grain-salad"
+    },
+    {
+      "session": 36,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 57,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 31,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 46,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 35,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 26,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 27,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 29,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 57,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/seasonal-vegetable-soup"
+    },
+    {
+      "session": 57,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 26,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 44,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/fusion-stew"
+    },
+    {
+      "session": 44,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 31,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/seasonal-vegetable-soup"
+    },
+    {
+      "session": 31,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 29,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 46,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 37,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 26,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 31,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 27,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 42,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 48,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 31,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 47,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 46,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 31,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 37,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 26,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 42,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 52,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 57,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 44,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 48,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 46,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 46,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 42,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 37,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 47,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 48,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 52,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 52,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 39,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 48,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 31,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 57,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 37,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 37,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 47,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 42,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 37,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 47,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/grain-salad"
+    },
+    {
+      "session": 47,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 39,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 58,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 37,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 48,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 47,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 56,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 37,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 52,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 43,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 41,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 48,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 69,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 39,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 54,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 58,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 41,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/local-markets"
+    },
+    {
+      "session": 41,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 39,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 39,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 56,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 38,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/join/pairings/"
+    },
+    {
+      "session": 43,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 69,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 58,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 43,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 69,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 54,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 38,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/join/pairings/sauces-and-pasta"
+    },
+    {
+      "session": 38,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 49,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 56,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 39,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 60,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 58,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/weeknight-pasta"
+    },
+    {
+      "session": 58,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 39,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 54,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 49,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 41,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 56,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/fusion-stew"
+    },
+    {
+      "session": 56,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 58,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 39,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 43,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 49,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 54,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 54,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 60,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 43,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 49,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 58,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 60,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 54,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 41,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 58,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 38,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 39,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 59,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/where/ingredients/"
+    },
+    {
+      "session": 54,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 60,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 64,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/join/pairings/"
+    },
+    {
+      "session": 49,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 59,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/where/ingredients/store-herbs"
+    },
+    {
+      "session": 59,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 58,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 64,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/join/pairings/bread-and-soup"
+    },
+    {
+      "session": 64,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 60,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 66,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 53,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 51,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 66,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 59,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 55,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 64,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 68,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/select/recipes/"
+    },
+    {
+      "session": 66,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/sleep/dough/"
+    },
+    {
+      "session": 70,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 51,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 72,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 55,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 55,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 59,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 66,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/sleep/dough/overnight-dough"
+    },
+    {
+      "session": 66,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 68,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/select/recipes/weeknight-pasta"
+    },
+    {
+      "session": 68,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 50,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 51,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 61,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/sleep/dough/"
+    },
+    {
+      "session": 59,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 66,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 64,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 50,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 50,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 66,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 72,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 51,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 51,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 61,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/sleep/dough/rested-cookie-dough"
+    },
+    {
+      "session": 61,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 72,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 66,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 51,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 72,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 55,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 65,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 51,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 68,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 51,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 65,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 65,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 55,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 50,
+      "method": "GET",
+      "url": "/api/posts?tag=select&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 61,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 68,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 71,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/union/flavors/"
+    },
+    {
+      "session": 51,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 67,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 71,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/union/flavors/fusion-stew"
+    },
+    {
+      "session": 71,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 61,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 65,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 63,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 62,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 67,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 61,
+      "method": "POST",
+      "url": "/graphql"
+    },
+    {
+      "session": 62,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 63,
+      "method": "GET",
+      "url": "/recipes/"
+    },
+    {
+      "session": 67,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 71,
+      "method": "GET",
+      "url": "/api/posts?tag=union&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 62,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/order-by/cooking-time/"
+    },
+    {
+      "session": 63,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/group-by/meal-prep/"
+    },
+    {
+      "session": 67,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 67,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 62,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/order-by/cooking-time/timing-dinner"
+    },
+    {
+      "session": 62,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 67,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 71,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 63,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/group-by/meal-prep/meal-prep"
+    },
+    {
+      "session": 63,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 67,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 62,
+      "method": "GET",
+      "url": "/api/wiki/search?q=<generated>"
+    },
+    {
+      "session": 71,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 63,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 67,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 62,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 63,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 62,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 63,
+      "method": "GET",
+      "url": "/api/posts?tag=sleep&sort=title&page=1&per_page=10"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-09-08T23:41:35.211858+00:00"
+}

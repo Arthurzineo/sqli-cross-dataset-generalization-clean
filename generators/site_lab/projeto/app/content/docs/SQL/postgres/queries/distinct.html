@@ -1,0 +1,6 @@
+<h1>DISTINCT</h1>
+<p><code>DISTINCT</code> removes duplicate result rows. PostgreSQL also supports <code>DISTINCT ON</code> to keep the first row in each ordered group.</p>
+<pre><code>SELECT DISTINCT status FROM orders;
+SELECT DISTINCT ON (customer_id) customer_id, created_at
+FROM orders
+ORDER BY customer_id, created_at DESC;</code></pre>

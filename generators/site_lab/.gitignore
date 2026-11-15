@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+# Node
+node_modules/
+# Banco gerado (recria via projeto/tools/reset_db.sh)
+projeto/db/lab.db
+# Arquivos efemeros do handshake de conteudo (limpos pelo runner)
+projeto/tools/traffic/agent_io/requests/*.json
+projeto/tools/traffic/agent_io/responses/*.json
+# OS
+.DS_Store
+Thumbs.db
+.env
+.data/
+.venv/

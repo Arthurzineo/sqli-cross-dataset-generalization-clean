@@ -1,0 +1,4 @@
+row_id,model,family,implementation,source_file,experiment_ids
+844e7edf868b2c0f2bc9,logistic,linear,sklearn.LogisticRegression,artigo/src/models/classical.py,[]
+51a9b23699f0bbe4103f,catboost,boosted_trees,CatBoostClassifier CPU,artigo/src/models/classical.py,[]
+ad78a322109e2618472e,mlp,neural_mlp,sklearn.MLPClassifier partial_fit,artigo/src/models/classical.py,[]

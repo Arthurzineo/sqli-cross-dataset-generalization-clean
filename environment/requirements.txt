@@ -1,0 +1,15 @@
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.0
+scikit-learn==1.9.0
+catboost==1.2.10
+matplotlib==3.11.1
+seaborn>=0.13
+PyYAML==6.0.3
+joblib>=1.4
+torch==2.13.0
+transformers==5.15.0
+huggingface-hub>=0.36
+umap-learn>=0.5
+shap>=0.46
+pytest>=8

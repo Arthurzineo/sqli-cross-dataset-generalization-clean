@@ -1,0 +1,11 @@
+feature,top_k_frequency
+char_equals,1.0
+char_sq,0.9714285714285714
+char_space,0.9428571428571428
+char_rparen,0.9428571428571428
+sql_comment_dash,0.8571428571428571
+ratio_nonalnum,0.8285714285714286
+sql_select,0.8285714285714286
+sql_or,0.8
+sql_and,0.5999999999999999
+sql_comment_block,0.4857142857142857

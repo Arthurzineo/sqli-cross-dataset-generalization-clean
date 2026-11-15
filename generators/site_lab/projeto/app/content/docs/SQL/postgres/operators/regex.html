@@ -1,0 +1,4 @@
+<h1>Regular Expression Operators</h1>
+<p>PostgreSQL regex operators include <code>~</code> for case-sensitive and <code>~*</code> for case-insensitive matching.</p>
+<pre><code>SELECT email FROM customers
+WHERE email ~* '^[a-z0-9._%+-]+@example\\.test$';</code></pre>

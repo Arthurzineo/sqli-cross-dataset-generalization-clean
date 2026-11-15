@@ -1,0 +1,9 @@
+criterion,target,model,representation,seed,selection_value,selection_unit,experiment_ids,row_id
+canonicalization_largest_gain,proprio,catboost,PAIRED,2026,0.25860798132211593,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_70be6ed68f2790ad3c5251d9ccfa"", ""SUPP_4cc6fae45664edd2f6c0dce09477""]",8ec948c1bb5d0ed3d83d32dc
+canonicalization_largest_loss,proprio,mlp,PAIRED,9001,-0.01458979328952883,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_2c7cb31a1194935dbb9105d7d1d2"", ""SUPP_7a5e7926c41f66a9140949438416""]",54c50c822b4bc73d57b28dc4
+canonicalization_median,artificial_sqli,catboost,PAIRED,42,0.08764248950531983,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_a87fb1a8fb7b35064e995dc104a9"", ""SUPP_ab1ae563ae92575bf7c24f21f62c""]",6226f5b2f6af0e1e6aeb71ee
+negative_transfer,srbh,logistic,RAW,2026,-0.16706894126725141,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_4a9dad2a9b342d622714699c209d"", ""SUPP_0be5615c2811db709f487615fcbb""]",c6b30463cae0e0ccec8f35b1
+positive_transfer,ecml,catboost,RAW,2026,0.49575353288241103,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_abccf4c126d5f7dd81942d073175"", ""SUPP_6be167336abe694af18933ae5702""]",026f8846a3d3891a135b83e7
+largest_common_test_gap,srbh,logistic,RAW,2026,0.36386100125505394,condition seed-mean extreme/median; seed closest to condition mean,"[""SUPP_e8e7d297f7c919a588223480f893"", ""SUPP_4a9dad2a9b342d622714699c209d""]",287447daa3226fbeefcab7cb
+largest_threshold_drift,proprio,logistic,RAW,123,0.6824356034398079,condition seed mean; representative seed closest to mean,"[""SUPP_87bd6067bb02ece6cce5984998dd""]",3d30cd2037f59e3c5c5f4379
+largest_oracle_gap,proprio,catboost,RAW,2026,0.21260643951052058,condition seed mean; representative seed closest to mean,"[""SUPP_70be6ed68f2790ad3c5251d9ccfa""]",0d0a15ebba41246294d12652

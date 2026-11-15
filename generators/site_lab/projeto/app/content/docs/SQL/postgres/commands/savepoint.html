@@ -1,0 +1,8 @@
+<h1>SAVEPOINT</h1>
+<p><code>SAVEPOINT</code> marks a point inside a transaction that can be restored without discarding all prior work.</p>
+<pre><code>BEGIN;
+INSERT INTO orders (customer_id, total) VALUES (10, 25);
+SAVEPOINT before_discount;
+UPDATE orders SET total = total - 5 WHERE customer_id = 10;
+ROLLBACK TO SAVEPOINT before_discount;
+COMMIT;</code></pre>

@@ -1,0 +1,148 @@
+{
+  "label": "benign",
+  "started_at": "2026-09-03T03:01:37.116644+00:00",
+  "base_url": "https://localhost:8443",
+  "content_service": "http://127.0.0.1:8765",
+  "sessions": 6,
+  "concurrency": 3,
+  "actions": [
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 1,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 3,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/operators"
+    },
+    {
+      "session": 2,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 1,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/operators/arithmetic"
+    },
+    {
+      "session": 1,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/docs/SQL/postgres/"
+    },
+    {
+      "session": 4,
+      "method": "CLICK",
+      "level": "category",
+      "url": "/docs/SQL/postgres/queries"
+    },
+    {
+      "session": 4,
+      "method": "CLICK",
+      "level": "page",
+      "url": "/docs/SQL/postgres/queries/where"
+    },
+    {
+      "session": 4,
+      "method": "POST",
+      "url": "/graphql",
+      "purpose": "related"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 4,
+      "method": "GET",
+      "url": "/api/posts?tag=join&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/forum"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/api/posts?sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 5,
+      "method": "GET",
+      "url": "/api/posts?tag=where&sort=title&page=1&per_page=10"
+    },
+    {
+      "session": 6,
+      "method": "GET",
+      "url": "/"
+    },
+    {
+      "session": 3,
+      "method": "POST",
+      "url": "/api/comments"
+    },
+    {
+      "session": 3,
+      "method": "POST",
+      "url": "/api/comments"
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-09-03T03:02:52.995451+00:00"
+}

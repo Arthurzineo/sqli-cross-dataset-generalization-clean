@@ -1,0 +1,5 @@
+<h1>RIGHT JOIN</h1>
+<p><code>RIGHT JOIN</code> keeps every row from the right relation. Reversing the table order usually lets a query use <code>LEFT JOIN</code> instead.</p>
+<pre><code>SELECT c.name, r.region_name
+FROM customers AS c
+RIGHT JOIN regions AS r ON r.region_id = c.region_id;</code></pre>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} | The Curious Kitchen Wiki{% endblock %}
+
+{% block content %}
+  <article class="doc-page doc-sql-page" data-doc-path="{{ path }}">
+    <a class="back-link" href="/recipes/">Cooking wiki</a>
+    <div class="doc-content">{{ content | safe }}</div>
+  </article>
+{% endblock %}

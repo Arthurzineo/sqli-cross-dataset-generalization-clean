@@ -1,0 +1,6 @@
+<h1>String Constants</h1>
+<p>Ordinary string constants use single quotes. To include a single quote inside one, write it twice. Escape string syntax is available with the <code>E</code> prefix when an escape sequence is needed.</p>
+<pre><code>SELECT 'O''Brien' AS author;
+SELECT E'first line\nsecond line' AS note;
+SELECT '100%'::text AS pattern;</code></pre>
+<p>Parameters supplied by an application should be bound values rather than concatenated into SQL text, even when the final query contains a string constant.</p>

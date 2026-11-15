@@ -1,0 +1,4 @@
+<h1>CLUSTER</h1>
+<p><code>CLUSTER</code> physically rewrites a table in the order of an index, which can improve scans that follow that order.</p>
+<pre><code>CLUSTER orders USING orders_created_at_idx;
+ANALYZE orders;</code></pre>

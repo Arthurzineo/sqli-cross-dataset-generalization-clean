@@ -1,0 +1,5 @@
+<h1>COMMENT</h1>
+<p><code>COMMENT ON</code> attaches descriptive text to a database object. PostgreSQL stores the comment in system catalogs and tools can display it with schema metadata.</p>
+<pre><code>COMMENT ON TABLE orders IS 'Customer purchase records';
+COMMENT ON COLUMN orders.total IS 'Amount charged in the order currency';</code></pre>
+<p>Comments help communicate intent for tables, columns, indexes, functions, schemas, and many other object types.</p>

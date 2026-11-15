@@ -1,0 +1,3 @@
+row_id,representation,accuracy,macro_f1,chance_accuracy,n,seed,same_n_per_dataset,cross_dataset_dedup,class_balanced_per_dataset,status,chance_macro_f1,experiment_ids,source_file
+942361a1b4c01196ea6d,RAW,0.8399008350730689,0.8543299621291386,0.1428571428571428,30654,42,False,False,True,exploratory_only,,[],artigo/results/consolidated/dataset_separability.csv
+646fce9b57d77aebf01a,CANONICALIZED,0.8041792614009725,0.8228942030981156,0.1428571428571428,30436,42,False,False,True,exploratory_only,,[],artigo/results/consolidated/dataset_separability.csv

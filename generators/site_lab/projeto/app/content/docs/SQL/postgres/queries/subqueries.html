@@ -1,0 +1,9 @@
+<h1>Subqueries</h1>
+<p>A subquery is a query nested inside another SQL statement. Use scalar, row, and table subqueries where their result shape fits.</p>
+<pre><code>SELECT name
+FROM customers AS c
+WHERE EXISTS (
+  SELECT 1 FROM orders AS o
+  WHERE o.customer_id = c.customer_id
+    AND o.total &gt; 500
+);</code></pre>

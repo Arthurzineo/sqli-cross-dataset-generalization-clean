@@ -1,0 +1,5 @@
+<h1>GIN Indexes</h1>
+<p>GIN indexes are designed for values containing many keys or elements, such as JSONB, arrays, and full-text search documents.</p>
+<pre><code>CREATE INDEX events_payload_gin_idx
+ON events USING gin (payload);
+SELECT * FROM events WHERE payload @&gt; '{"priority": true}';</code></pre>

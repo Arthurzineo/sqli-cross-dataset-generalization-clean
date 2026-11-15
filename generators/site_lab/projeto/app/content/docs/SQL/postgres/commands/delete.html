@@ -1,0 +1,9 @@
+<h1>DELETE</h1>
+<p><code>DELETE</code> removes rows from a table. Combine it with a selective <code>WHERE</code> condition and optionally use <code>RETURNING</code> to record what was removed.</p>
+<pre><code>DELETE FROM sessions
+WHERE expires_at &lt; now()
+RETURNING session_id, user_id;</code></pre>
+<p>PostgreSQL also supports <code>USING</code> when the deletion condition depends on another table.</p>
+<pre><code>DELETE FROM order_items AS item
+USING cancelled_orders AS cancelled
+WHERE item.order_id = cancelled.order_id;</code></pre>

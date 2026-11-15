@@ -1,0 +1,113 @@
+{
+  "split_id": "04c0e7eb762f486b28b6e0eaa4a15077123c6bea40cdc9e71c2bd65046b704a0",
+  "cache_id": "9161607ac6987977403b1dc44be707e0b38c58ba070c286fe7ccd68a5479c2e4",
+  "split_file": "<PROJECT_ROOT>/artigo/complementos_generalizacao_v1/full/splits/04c0e7eb762f486b28b6e0eaa4a15077123c6bea40cdc9e71c2bd65046b704a0.parquet",
+  "sha256": "55f1942bea053950de599fa72f62413c1bdc533065682d02d7fc8a8da38ab117",
+  "audit": {
+    "condition": "benign",
+    "n_per_dataset_class": 1177,
+    "removed_cross_origin_rows": 110,
+    "removed_conflicting_hashes": 0,
+    "n_before": 170922,
+    "n_after": 8239,
+    "classes": [
+      0
+    ],
+    "origins": [
+      "proprio",
+      "csic",
+      "ecml",
+      "srbh",
+      "artificial_sqli",
+      "site_cooking",
+      "site_sqli"
+    ],
+    "cap_explicit": 2500
+  },
+  "counts": [
+    {
+      "split": "test",
+      "dataset": "artificial_sqli",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "csic",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "ecml",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "proprio",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "site_cooking",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "site_sqli",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "test",
+      "dataset": "srbh",
+      "y": 0,
+      "n": 235
+    },
+    {
+      "split": "train",
+      "dataset": "artificial_sqli",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "csic",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "ecml",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "proprio",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "site_cooking",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "site_sqli",
+      "y": 0,
+      "n": 942
+    },
+    {
+      "split": "train",
+      "dataset": "srbh",
+      "y": 0,
+      "n": 942
+    }
+  ]
+}

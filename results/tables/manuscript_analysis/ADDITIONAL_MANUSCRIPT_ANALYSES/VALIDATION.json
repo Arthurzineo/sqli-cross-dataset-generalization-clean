@@ -1,0 +1,23 @@
+{
+  "historical_runs": 13170,
+  "effective_seed_conditions": 11310,
+  "coalitions": 2262,
+  "nested_edges": 6480,
+  "matched_seed_pairs": 32400,
+  "matched_seed_counts": [
+    5
+  ],
+  "missing_coalition_seed_conditions": 0,
+  "incomplete_edge_conditions": 0,
+  "feature_original_parquet_exists": false,
+  "features_per_representation": {
+    "CANONICALIZED": 10,
+    "RAW": 10
+  },
+  "training_runs_executed": 0,
+  "model_predictions_computed": 0,
+  "feature_importances_computed": 0,
+  "hypothesis_tests": 0,
+  "validation_switch_seed_pairs": 10746,
+  "input_files_unchanged": true
+}
