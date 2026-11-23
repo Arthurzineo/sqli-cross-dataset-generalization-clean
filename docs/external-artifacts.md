@@ -8,7 +8,7 @@
 - caches e checkpoints dos experimentos Top-10;
 - variantes tabulares grandes dos experimentos de robustez;
 - dados da base `proprio`;
-- dados ECML/PKDD e CSIC cuja licença de redistribuição não foi confirmada.
+- arquivos-fonte originais do ECML/PKDD e do HTTP CSIC 2010; as cópias
+  processadas usadas no estudo estão em `datasets/processed/`.
 
 Os índices, métricas agregadas, tabelas, código e figuras foram preservados.
-

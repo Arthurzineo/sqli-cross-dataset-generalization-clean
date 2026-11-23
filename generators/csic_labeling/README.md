@@ -16,5 +16,5 @@ foram sorteadas aleatoriamente e inspecionadas uma a uma. Nenhuma das 200
 apresentou rótulo incorreto. Em seguida, o arquivo rotulado passou por uma revisão
 geral.
 
-A base CSIC não é redistribuída. Consulte `datasets/sources/csic/` para obtê-la e
-prepará-la.
+A cópia processada usada no estudo está em `datasets/processed/`. Os arquivos
+HTTP de origem podem ser obtidos pelas referências em `datasets/sources/README.md`.

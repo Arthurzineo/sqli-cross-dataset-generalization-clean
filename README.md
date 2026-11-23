@@ -14,9 +14,11 @@ canonicalização da entrada”**.
 - sem predições completas por amostra, probabilidades completas, embeddings,
   caches ou checkpoints.
 
-As bases ECML/PKDD e CSIC não são redistribuídas porque suas licenças de dados
-não foram confirmadas. A base `proprio` não é redistribuída por conter material
-potencialmente pessoal ou operacional. Consulte `datasets/README.md`.
+O repositório inclui as cópias processadas usadas no estudo de ECML/PKDD,
+CSIC, SR-BH, `artificial`, `artificial_sqli`, `site_sqli` e `site_cooking`,
+com origem e transformações documentadas em `datasets/README.md`. A base
+`proprio` não é redistribuída por conter material potencialmente pessoal ou
+operacional.
 
 ## Estrutura
 

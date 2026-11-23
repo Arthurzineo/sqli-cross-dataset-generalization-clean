@@ -7,28 +7,18 @@ que caminhos absolutos preservados em documentos históricos sejam válidos.
 
 ## 2. Dados
 
-As quatro bases redistribuíveis já estão em `datasets/processed/`. O arquivo
-`config/datasets.yaml` aponta para as vistas históricas RAW e CANONICALIZED de
-`artificial_sqli`, `site_sqli`, `site_cooking` e `srbh` por caminhos relativos
-à raiz do repositório.
+As cópias processadas de `artificial`, `artificial_sqli`, `csic`, `ecml`,
+`site_sqli`, `site_cooking` e `srbh` estão em `datasets/processed/`. O arquivo
+`config/datasets.yaml` aponta para as vistas históricas RAW e CANONICALIZED por
+caminhos relativos à raiz do repositório.
 
-ECML/PKDD 2007 e HTTP CSIC 2010 não são redistribuídos. Obtenha os arquivos de
-origem conforme `datasets/sources/README.md`, confira seus termos de uso e
-execute os scripts de preparação de `datasets/sources/ecml/` e
-`datasets/sources/csic/`. Coloque as cópias binárias finais nestes caminhos:
-
-```text
-datasets/external/ecml/raw/ecml.csv
-datasets/external/ecml/canonicalized/ecml.csv
-datasets/external/csic/raw/csic.csv
-datasets/external/csic/canonicalized/csic.csv
-```
-
-Para ECML, a preparação parte de `learning_dataset.xml`; para CSIC, parte da
-derivação rotulada descrita em `generators/csic_labeling/README.md`. Os nomes,
-separadores, colunas e codificações esperados constam de
-`config/datasets.yaml`. A base `proprio` é restrita e só pode ser configurada
-por quem tenha autorização para usar e sanitizar a coleta.
+Os arquivos de origem do ECML/PKDD 2007 e HTTP CSIC 2010 não são necessários
+para executar os experimentos a partir das cópias processadas. Para refazer a
+preparação desde a origem, consulte os repositórios e páginas citados em
+`datasets/sources/README.md` e execute os scripts de `datasets/sources/ecml/`,
+`datasets/sources/csic/` e `generators/csic_labeling/`. O XML de origem do ECML
+não integra este repositório. A base `proprio` é restrita e só pode ser
+configurada por quem tenha autorização para usar e sanitizar a coleta.
 
 ## 3. Preparação e auditoria
 
