@@ -2,17 +2,17 @@ datasets:
   proprio:
     family: ojs
     source_type: captured_application
-    availability: restricted
-    raw_source: datasets/restricted/proprio/raw/proprio.tsv
-    decoded_source: datasets/restricted/proprio/canonicalized/proprio.tsv
+    availability: included_sanitized
+    raw_source: datasets/processed/historical/raw/proprio.tsv
+    decoded_source: datasets/processed/historical/canonicalized/proprio.tsv
     raw_file: proprio.tsv
     decoded_file: proprio.tsv
     separator: "\t"
-    encoding: latin-1
+    encoding: utf-8
     text_columns: [url, body]
     label_column: sqli
     year: null
-    notes: Aplicação OJS própria.
+    notes: Aplicação OJS própria; cópia pública sanitizada, com a entrada restrita não redistribuída.
   csic:
     family: csic
     source_type: synthetic_ecommerce

@@ -1,8 +1,9 @@
 # Bases e disponibilidade
 
 O repositório preserva scripts de obtenção/preparação, documentação, hashes e
-metadados, e inclui em `processed/` as vistas finais usadas no estudo, exceto a
-base restrita `proprio`.
+metadados, e inclui em `processed/` as vistas finais usadas no estudo. Para
+`proprio`, são distribuídas cópias sanitizadas; a entrada experimental restrita
+não é publicada.
 
 | Base | Origem e licença | Geração/coleta e rotulagem | Família | N RAW | N CAN histórico |
 |---|---|---|---|---:|---:|
@@ -12,14 +13,16 @@ base restrita `proprio`.
 | `artificial_sqli` | base própria sintética | gerador parametrizado de SQLi; classe determinada pelo ramo de geração, com benignos do gerador original | `artificial` | 5.000 | 5.000 |
 | `site_sqli` | base própria de laboratório | aplicação de documentação/fórum; navegação gera benignos e a campanha em GET, formulário, JSON e GraphQL gera ataques | `site_lab` | 9.122 | 9.122 |
 | `site_cooking` | base própria de laboratório | aplicação culinária com termos SQL em linguagem natural; navegação gera benignos e a campanha controlada gera ataques | `site_lab` | 7.334 | 7.332 |
-| `proprio` | coleta própria restrita | aplicação OJS; SQLi da campanha controlada (`sqli=1`, `xss=0`) e tráfego normal do período como benigno | `ojs` | 37.232 | 37.212 |
+| `proprio` | coleta própria; cópia pública sanitizada | aplicação OJS; SQLi da campanha controlada (`sqli=1`, `xss=0`) e tráfego normal do período como benigno | `ojs` | 37.232 | 37.212 |
 
 As vistas controladas são derivadas das mesmas linhas RAW; portanto, RAW e
 CANONICALIZED têm o mesmo número de registros dentro desse protocolo. As
 diferenças da última coluna pertencem às cópias históricas, preparadas e
 deduplicadas separadamente. `proprio` permanece restrito. O arquivo XML de
 origem do ECML e os arquivos HTTP originais do CSIC não são incluídos; o pacote
-contém apenas as cópias processadas efetivamente usadas nos experimentos.
+contém apenas as cópias processadas disponíveis. Em `proprio`, contagens,
+rótulos e estrutura tabular foram preservados, enquanto dados pessoais e
+operacionais foram substituídos antes da distribuição.
 
 A variante auxiliar `artificial` também está em `processed/`: sua vista RAW
 SQLi-only tem 5.000 registros e sua vista histórica canonicalizada tem 4.626
@@ -30,7 +33,7 @@ independentes na mesma composição.
 
 As cópias do srbh são um recorte filtrado da base pública SR-BH 2020 (CC0 1.0), coletada em um honeypot. O conteúdo das requisições, inclusive campos de formulário preenchidos por scanners como o OWASP ZAP, não foi alterado.
 
-O manifesto dos 28 arquivos processados está em `processed/manifest.csv`.
+O manifesto dos 32 arquivos processados está em `processed/manifest.csv`.
 As vistas históricas foram conferidas contra `metadata/dataset_manifest.csv`;
 as vistas controladas preservam as mesmas linhas RAW e são reproduzíveis por
 `processed/build_controlled_views.py`.

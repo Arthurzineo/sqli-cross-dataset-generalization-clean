@@ -1,0 +1,110 @@
+{
+  "files": {
+    "raw": {
+      "source": "artigo/datasets/original_copies/raw/proprio.tsv",
+      "output": "analises_revisao_v2/sanitizacao_proprio/dados/proprio_raw_sanitizado.tsv",
+      "rows": 37232,
+      "labels": {
+        "0": 18616,
+        "1": 18616
+      },
+      "bytes": 7699255,
+      "sha256": "28b355a0286fa46d0b0c8a0c95d9b057c7d78578ca3d93ec909076d4515eaf32"
+    },
+    "canonicalized": {
+      "source": "artigo/datasets/original_copies/decoded/proprio.tsv",
+      "output": "analises_revisao_v2/sanitizacao_proprio/dados/proprio_canonicalized_sanitizado.tsv",
+      "rows": 37212,
+      "labels": {
+        "0": 18606,
+        "1": 18606
+      },
+      "bytes": 7694024,
+      "sha256": "2ce6cd0d7531c38673aa5cb6d6f6eeb2b336206f363b865ae24b80be718cbb31"
+    }
+  },
+  "replacement_occurrences": {
+    "credential": 3394,
+    "data_text": 70,
+    "disable_reason": 6,
+    "document": 42,
+    "doi": 56,
+    "free_text": 8983,
+    "identifier": 21853,
+    "interest_text": 8,
+    "ip": 36,
+    "journal": 73808,
+    "journal_directory": 390,
+    "name": 416,
+    "new_note": 4,
+    "path_filename": 452,
+    "path_owner": 62,
+    "phone": 2441,
+    "profile": 8831,
+    "search_query": 86,
+    "search_text": 130,
+    "source_text": 6500,
+    "term_text": 359,
+    "token": 3776,
+    "tracking": 14,
+    "uuid": 2
+  },
+  "distinct_replacements": {
+    "credential": 565,
+    "data_text": 35,
+    "disable_reason": 3,
+    "document": 3,
+    "doi": 25,
+    "free_text": 5242,
+    "identifier": 4695,
+    "interest_text": 4,
+    "ip": 3,
+    "journal": 30,
+    "journal_directory": 14,
+    "name": 136,
+    "new_note": 2,
+    "path_filename": 216,
+    "path_owner": 11,
+    "phone": 180,
+    "profile": 4,
+    "search_query": 35,
+    "search_text": 46,
+    "source_text": 2557,
+    "term_text": 138,
+    "token": 16,
+    "tracking": 7,
+    "uuid": 1
+  },
+  "verification": {
+    "raw": {
+      "rows_original": 37232,
+      "rows_sanitized": 37232,
+      "labels_original": {
+        "0": 18616,
+        "1": 18616
+      },
+      "labels_sanitized": {
+        "0": 18616,
+        "1": 18616
+      },
+      "non_example_email_matches": 0,
+      "original_journal_paths": 0
+    },
+    "canonicalized": {
+      "rows_original": 37212,
+      "rows_sanitized": 37212,
+      "labels_original": {
+        "0": 18606,
+        "1": 18606
+      },
+      "labels_sanitized": {
+        "0": 18606,
+        "1": 18606
+      },
+      "non_example_email_matches": 0,
+      "original_journal_paths": 0
+    },
+    "failures": [],
+    "passed": true
+  }
+}

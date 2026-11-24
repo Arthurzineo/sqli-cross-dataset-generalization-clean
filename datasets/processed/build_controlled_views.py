@@ -24,6 +24,7 @@ DATASETS = {
     "site_sqli.csv": (",", "utf-8", ("url", "body")),
     "site_cooking.csv": (",", "utf-8", ("url", "body")),
     "srbh.csv": (",", "utf-8", ("URL", "content")),
+    "proprio.tsv": ("\t", "utf-8", ("url", "body")),
 }
 
 

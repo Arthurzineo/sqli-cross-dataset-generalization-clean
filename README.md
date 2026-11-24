@@ -14,11 +14,11 @@ canonicalização da entrada”**.
 - sem predições completas por amostra, probabilidades completas, embeddings,
   caches ou checkpoints.
 
-O repositório inclui as cópias processadas usadas no estudo de ECML/PKDD,
-CSIC, SR-BH, `artificial`, `artificial_sqli`, `site_sqli` e `site_cooking`,
-com origem e transformações documentadas em `datasets/README.md`. A base
-`proprio` não é redistribuída por conter material potencialmente pessoal ou
-operacional.
+O repositório inclui cópias processadas de ECML/PKDD, CSIC, SR-BH,
+`artificial`, `artificial_sqli`, `site_sqli`, `site_cooking` e `proprio`, com
+origem e transformações documentadas em `datasets/README.md`. Para `proprio`,
+somente a versão sanitizada é redistribuída; a entrada capturada permanece
+restrita.
 
 ## Estrutura
 
